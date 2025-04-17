@@ -1,0 +1,48 @@
+<!--# readhead head #-->
+	<ul>
+<!--# readend #-->
+
+<!--# readhead element #-->
+	<li>
+		<span><!--# value open_year #-->.<!--# value open_month #-->.<!--# value open_day #--></span>
+		<p>
+			<!--# ifbegin equal detail_mode 0 #-->
+				<!--# value topics #-->
+			<!--# endif #-->
+
+			<!--# ifbegin equal detail_mode 1 #-->
+
+				<!--# ifbegin boolean use_link_message #-->
+					<!--# value topics #--><br />
+					<a href="info.php?type=news&id=(!--# value id #--)"><!--# value link_message #--></a>
+				<!--# endif #-->
+
+				<!--# ifbegin not boolean use_link_message #-->
+					<a href="info.php?type=news&id=(!--# value id #--)"><!--# value topics #--></a>
+				<!--# endif #-->
+
+			<!--# endif #-->
+
+			<!--# ifbegin equal detail_mode 2 #-->
+
+				<!--# ifbegin boolean use_link_message #-->
+					<!--# value topics #--><br />
+					<a href="(!--# value link_url #--)"><!--# value link_message #--></a>
+				<!--# endif #-->
+
+				<!--# ifbegin not boolean use_link_message #-->
+					<a href="(!--# value link_url #--)"><!--# value topics #--></a>
+				<!--# endif #-->
+
+			<!--# endif #-->
+		</p>
+	</li>
+<!--# readend #-->
+
+<!--# readhead dummy #-->
+<!--# readend #-->
+
+<!--# readhead foot #-->
+	</ul>
+	<p class="more"><a href="search.php?type=news&run=true">‚³‚ç‚ÉŒ©‚é</a></p>
+<!--# readend #-->

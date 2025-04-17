@@ -1,0 +1,79 @@
+<body>
+<div id="wrapper" class="nobody">
+
+<!--# include head #-->
+<!--# include guide #-->
+
+<div id="contents">
+<div class="contents_body regist clearfix">
+
+	<!--# include sideBarLeft #-->
+
+	<div class="contents_m">
+		<div class="h2 clearfix">
+			<h2>無料登録</h2>
+		</div><!--h2 END-->
+		<div class="form_table">
+
+			<!--# variable form_begin #-->
+
+			<table>
+    <caption>ログイン情報</caption>
+    <tr>
+        <th style="width:30%;"><span class="required">[必須]</span>メールアドレス</th>
+        <td class="(!--# syscode isValidateEx mail #--)">
+            <!--# form text mail 50 256  (!--# ecode ime off #--) #-->
+            <!--# syscode validateEx #-->
+        </td>
+    </tr>
+    <tr>
+        <th><span class="required">[必須]</span>パスワード</th>
+        <td class="(!--# syscode isValidateEx pass1 #--)">
+            <!--# form password pass1 16 16  (!--# ecode ime off #--) #-->
+            <!--# syscode validateEx #-->
+        </td>
+    </tr>
+    <tr>
+        <th><span class="required">[必須]</span>パスワード（確認）</th>
+        <td class="(!--# syscode isValidateEx pass2 #--)">
+            <!--# form password pass2 16 16  (!--# ecode ime off #--) #-->
+            <!--# syscode validateEx #-->
+        </td>
+    </tr>
+    <tr>
+        <th><span class="required">[必須]</span>個人関連情報の取り扱い</th>
+        <td>
+            <input type="checkbox" id="consentCheckbox">
+            <label for="consentCheckbox"><a href="#personalInfoLink">個人関連情報の取り扱い</a></label>
+        </td>
+    </tr>
+</table>
+
+<!-- 個人関連情報が記載されたリンク -->
+<div id="personalInfoLink">
+    <!-- ここに個人関連情報の詳細が記載されたリンクを挿入 -->
+    <p>個人情報の詳細が記載されたページへのリンクを挿入</p>
+</div>
+
+
+			<div class="submit">
+				<ul>
+					<li><input type="submit" name="back" class="back" value="戻る" /></li>
+					<li><input type="submit" name="Submit" class="check" value="確認する" /></li>
+				</ul>
+			</div><!--submit END-->
+
+			<!--# variable form_end #-->
+
+		</div><!--form_table END-->
+	</div><!--contents_m END-->
+
+	<!--# include sideBarRight #-->
+
+</div><!--main_wrapper END-->
+</div><!--contents END-->
+
+<!--# include foot #-->
+
+</div><!--wrapper END-->
+</body>

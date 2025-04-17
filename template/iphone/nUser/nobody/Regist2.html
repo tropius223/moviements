@@ -1,0 +1,79 @@
+<body>
+<div id="wrapper" class="nobody">
+
+<!--# include head #-->
+<!--# include guide #-->
+
+<div id="contents">
+<div class="contents_body regist clearfix">
+
+	<!--# include sideBarLeft #-->
+
+	<div class="contents_m">
+		<div class="h2 clearfix">
+			<h2>無料登録</h2>
+		</div><!--h2 END-->
+		<div class="form_table">
+
+			<!--# variable form_begin #-->
+<!--# ifbegin false #-->
+			<table>
+				<caption>振込み先</caption>
+				<tr>
+					<th style="width:30%;"><span class="required">[必須]</span>銀行名</th>
+					<td class="(!--# syscode isValidateEx bank_name #--)">
+						<!--# form text bank_name 50 128  (!--# ecode ime on #--) #-->
+						<!--# syscode validateEx #-->
+					</td>
+				</tr>
+				<tr>
+					<th><span class="required">[必須]</span>支店名</th>
+					<td class="(!--# syscode isValidateEx branch_name #--)">
+						<!--# form text branch_name 50 128  (!--# ecode ime on #--) #-->
+						<!--# syscode validateEx #-->
+					</td>
+				</tr>
+				<tr>
+					<th><span class="required">[必須]</span>口座名義</th>
+					<td class="(!--# syscode isValidateEx bank_user #--)">
+						<!--# form text bank_user 50 128  (!--# ecode ime on #--) #-->
+						<!--# syscode validateEx #-->
+					</td>
+				</tr>
+				<tr>
+					<th><span class="required">[必須]</span>口座種類</th>
+					<td class="(!--# syscode isValidateEx bank_type #--)">
+						<!--# form radio bank_type   普通/当座 普通/当座 #-->
+						<!--# syscode validateEx #-->
+					</td>
+				</tr>
+				<tr>
+					<th><span class="required">[必須]</span>口座番号</th>
+					<td class="(!--# syscode isValidateEx bank_number #--)">
+						<!--# form text bank_number 20 20  (!--# ecode ime off #--) #-->
+						<!--# syscode validateEx #-->
+					</td>
+				</tr>
+			</table>
+<!--# endif #-->
+			<div class="submit">
+				<ul>
+					<li><input type="submit" name="back" class="back" value="戻る" /></li>
+					<li><input type="submit" name="Submit" class="check" value="次へ" /></li>
+				</ul>
+			</div><!--submit END-->
+
+			<!--# variable form_end #-->
+
+		</div><!--form_table END-->
+	</div><!--contents_m END-->
+
+	<!--# include sideBarRight #-->
+
+</div><!--main_wrapper END-->
+</div><!--contents END-->
+
+<!--# include foot #-->
+
+</div><!--wrapper END-->
+</body>

@@ -1,0 +1,44 @@
+<body>
+<div id="wrapper" class="admin">
+
+<!--# include head #-->
+<!--# include guide #-->
+
+<div id="contents">
+<div class="contents_body info clearfix">
+	<div class="contents_l">
+		<div class="h2 clearfix">
+			<h2><!--# value name #--><span>（<!--# value id #-->）</span></h2>
+			<p class="back"><a href="search.php?type=nUser&run=true">ユーザーの検索へ戻る</a></p>
+		</div><!--h2 END-->
+		<div class="state_form clearfix">
+			<ul>
+				<li><a href="edit.php?type=nUser&id=(!--# value id #--)" class="edit">編集</a></li>
+				<li><a href="edit.php?type=nUser&id=(!--# value id #--)&delete=true" class="delete">削除</a></li>
+			</ul>
+			<form method="post" action="info.php?type=(!--# get type #--)&id=(!--# value id #--)">
+			<!--# form hidden post true #-->
+			<dl>
+				<dt>アクティベート</dt>
+				<dd><label><!--# form radio activate   1 未アクティベート #--></label></dd>
+				<dd><label><!--# form radio activate   4 アクティベート済み #--></label></dd>
+				<dd><label><!--# form radio activate   8 利用拒否 #--></label></dd>
+			</dl>
+			<p class="button"><input type="submit" value="更新する" /></p>
+			</form>
+		</div><!--state_form END-->
+		<div class="info_table">
+
+			<!--# include nUserInfoTable #-->
+
+		</div><!--info_table END-->
+
+	</div><!--contents_l END-->
+
+</div><!--main_wrapper END-->
+</div><!--contents END-->
+
+<!--# include foot #-->
+
+</div><!--wrapper END-->
+</body>

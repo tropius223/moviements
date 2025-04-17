@@ -1,0 +1,59 @@
+<table>
+	<caption>お知らせ</caption>
+	<tr>
+		<th style="width:18%;"><span class="required">[必須]</span>お知らせ日時</th>
+		<td class="(!--# syscode isValidateEx open_year/date_format validate #--)">
+			<!--# code num_option open_year (!--# code now y 1 #--) (!--# code now y #--) 2009 #-->年
+			<!--# code num_option open_month 12 (!--# code now m #--) 1 #-->月
+			<!--# code num_option open_day 31 (!--# code now d #--) 1 #-->日
+			<!--# syscode ValidateEx #-->
+		</td>
+	</tr>
+	<tr>
+		<th><span class="required">[必須]</span>見出し</th>
+		<td class="(!--# syscode isValidateEx topics validate #--)" >
+			<!--# form text topics 80 255 #-->
+			<!--# syscode ValidateEx #-->
+		</td>
+	</tr>
+	<tr>
+		<th><span class="required">[必須]</span>リンク/本文等<br />(詳細設定)</th>
+		<td>
+			<div>
+				<strong>リンク先:</strong><br />
+				<!--# form radio detail_mode 0  0/1/2 リンク無し/本文ページ/任意のURI #-->
+			</div>
+
+			<div id="use_link_message_div">
+				<div style="font-weight:bold;">リンクテキスト</div>
+				<!--# form radio use_link_message FALSE  FALSE/TRUE 見出しにリンク/キーワードにリンク #--><br />
+
+				<div class="(!--# syscode isValidateEx link_message validate #--)" id="link_message_div">
+					<div style="font-weight:bold;">リンクメッセージ</div>
+					<!--# form text link_message 32 255 詳細はこちら。 #-->
+					<!--# syscode ValidateEx #-->
+				</div>
+
+			</div>
+
+			<div class="(!--# syscode isValidateEx detail_message validate #--)" id="detail_message_div">
+				<div style="font-weight:bold;">お知らせ本文</div>
+				<!--# form textarea detail_message 80 20 #-->
+				<!--# syscode ValidateEx #-->
+			</div>
+
+			<div class="(!--# syscode isValidateEx link_url validate #--)" id="link_url_div">
+				<div style="font-weight:bold;">任意のURI</div>
+				<!--# form text link_url 64 255 #-->
+				<!--# syscode ValidateEx #-->
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<th><span class="required">[必須]</span>公開状態</th>
+		<td class="(!--# syscode isValidateEx activate #--)">
+			<!--# form radio activate   1/4 非公開/公開 #-->
+			<!--# syscode validateEx #-->
+		</td>
+	</tr>
+</table>

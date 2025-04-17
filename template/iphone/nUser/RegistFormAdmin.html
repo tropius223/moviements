@@ -1,0 +1,112 @@
+<table>
+	<caption>ユーザー情報</caption>
+	<tr>
+		<th style="width:30%;"><span class="required">[必須]</span>名前</th>
+		<td class="(!--# syscode isValidateEx name #--)">
+			<!--# form text name 50 255  (!--# ecode ime on #--) #-->
+			<!--# syscode validateEx #-->
+		</td>
+	</tr>
+	<tr>
+		<th><span class="required">[必須]</span>都道府県</th>
+		<td class="(!--# syscode isValidateEx adds #--)">
+			<!--# code tableSelectForm adds prefectures name id  選択してください #-->
+			<!--# syscode validateEx #-->
+		</td>
+	</tr>
+	<tr>
+		<th><span class="required">[必須]</span>電話番号</th>
+		<td class="(!--# syscode isValidateEx add_sub #--)">
+			<!--# form text add_sub 50 256  (!--# ecode ime on #--) #-->
+			<!--# syscode validateEx #-->
+		</td>
+	</tr>
+	<tr>
+		<th><span class="required">[必須]</span>性別</th>
+		<td class="(!--# syscode isValidateEx sex #--)">
+			<!--# form radio sex   男性/女性 男性/女性 #-->
+			<!--# syscode validateEx #-->
+		</td>
+	</tr>
+	<tr>
+		<th><span class="required">[必須]</span>生年月日</th>
+		<td class="(!--# syscode isValidateEx birth_year/birth_month/birth_day #--)">
+			<!--# form text birth_year 4 4  (!--# ecode ime off #--) #-->年
+			<!--# form text birth_month 2 2  (!--# ecode ime off #--) #-->月
+			<!--# form text birth_day 2 2  (!--# ecode ime off #--) #-->日
+			<!--# syscode validateEx #-->
+		</td>
+	</tr>
+</table>
+<!--# ifbegin false #-->
+<table>
+	<caption>振込み先</caption>
+	<tr>
+		<th style="width:30%;"><span class="required">[必須]</span>銀行名</th>
+		<td class="(!--# syscode isValidateEx bank_name #--)">
+			<!--# form text bank_name 50 128  (!--# ecode ime on #--) #-->
+			<!--# syscode validateEx #-->
+		</td>
+	</tr>
+	<tr>
+		<th><span class="required">[必須]</span>支店名</th>
+		<td class="(!--# syscode isValidateEx branch_name #--)">
+			<!--# form text branch_name 50 128  (!--# ecode ime on #--) #-->
+			<!--# syscode validateEx #-->
+		</td>
+	</tr>
+	<tr>
+		<th><span class="required">[必須]</span>口座名義</th>
+		<td class="(!--# syscode isValidateEx bank_user #--)">
+			<!--# form text bank_user 50 128  (!--# ecode ime on #--) #-->
+			<!--# syscode validateEx #-->
+		</td>
+	</tr>
+	<tr>
+		<th><span class="required">[必須]</span>口座種類</th>
+		<td class="(!--# syscode isValidateEx bank_type #--)">
+			<!--# form radio bank_type   普通/当座 普通/当座 #-->
+			<!--# syscode validateEx #-->
+		</td>
+	</tr>
+	<tr>
+		<th><span class="required">[必須]</span>口座番号</th>
+		<td class="(!--# syscode isValidateEx bank_number #--)">
+			<!--# form text bank_number 20 20  (!--# ecode ime off #--) #-->
+			<!--# syscode validateEx #-->
+		</td>
+	</tr>
+</table>
+<!--# endif #-->
+<table>
+	<caption>ログイン情報</caption>
+	<tr>
+		<th style="width:30%;"><span class="required">[必須]</span>メールアドレス</th>
+		<td class="(!--# syscode isValidateEx mail #--)">
+			<!--# form text mail 50 256  (!--# ecode ime off #--) #-->
+			<!--# syscode validateEx #-->
+		</td>
+	</tr>
+	<tr>
+		<th><span class="required">[必須]</span>パスワード</th>
+		<td class="(!--# syscode isValidateEx pass1 #--)">
+			<!--# form password pass1 16 16  (!--# ecode ime off #--) #-->
+			<!--# syscode validateEx #-->
+		</td>
+	</tr>
+	<tr>
+		<th><span class="required">[必須]</span>パスワード（確認）</th>
+		<td class="(!--# syscode isValidateEx pass2 #--)">
+			<!--# form password pass2 16 16  (!--# ecode ime off #--) #-->
+			<!--# syscode validateEx #-->
+		</td>
+	</tr>
+</table>
+
+<table>
+	<caption>成果情報</caption>
+	<tr>
+		<th style="width:30%;">現在のポイント</th>
+		<td><!--# form text point 20 20  (!--# ecode ime off #--) #-->pt</td>
+	</tr>
+</table>

@@ -1,0 +1,47 @@
+<table>
+	<caption>ユーザー情報</caption>
+	<tr>
+		<th style="width:30%;">お知らせ日時</th>
+		<td>
+			<!--# value open_year #-->年
+			<!--# value open_month #-->月
+			<!--# value open_day #-->日
+		</td>
+	</tr>
+	<tr>
+		<th><p>見出し</p></th>
+		<td><!--# value topics #--></td>
+	</tr>
+	<tr>
+		<th><p>詳細設定</p></th>
+		<td>
+			<div style="font-weight:bold;">リンク先</div>
+			<!--# valueReplace detail_mode 0/1/2 リンク無し/本文ページ/任意のURI #--><br />
+
+			<!--# ifbegin not equal detail_mode 0 #-->
+				<div style="font-weight:bold;">リンクテキスト</div>
+				<!--# valueReplace use_link_message FALSE/TRUE 見出しにリンク/キーワードにリンク #--><br />
+
+				<!--# ifbegin equal use_link_message TRUE #-->
+					<div style="font-weight:bold;">リンクメッセージ</div>
+					<!--# value link_message #--><br />
+				<!--# endif #-->
+
+			<!--# endif #-->
+
+			<!--# ifbegin equal detail_mode 1 #-->
+				<div style="font-weight:bold;">お知らせ本文</div>
+				<!--# value detail_message #--><br />
+			<!--# endif #-->
+
+			<!--# ifbegin equal detail_mode 2 #-->
+				<div style="font-weight:bold;">任意のURI</div>
+				<!--# value link_url #--><br />
+			<!--# endif #-->
+		</td>
+	</tr>
+	<tr>
+		<th>公開状態</th>
+		<td><!--# valueReplace activate 1/4 非公開/公開 #--></td>
+	</tr>
+</table>
