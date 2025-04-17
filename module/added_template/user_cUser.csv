@@ -1,0 +1,15 @@
+0,,Txxxx,/cUser/,,15,3,HEAD_DESIGN,other/common/Head.html,0
+0,,Txxxx,/cUser/,,15,3,FOOT_DESIGN,other/common/Foot.html,0
+0,,Txxxx,/cUser/,,15,3,SEARCH_PAGE_CHANGE_DESIGN,other/common/SearchPageChange.html,0
+0,,Txxxx,/cUser/,,6,3,TOP_PAGE_DESIGN,other/user/cUser/Index.html,0
+0,,Txxxx,/cUser/,,8,3,TOP_PAGE_DESIGN,other/user/cUser/IndexDeny.html,0
+0,,Txxxx,/cUser/,head,6,3,INCLUDE_DESIGN,other/user/cUser/Head.html,0
+0,,Txxxx,/cUser/,head,8,3,INCLUDE_DESIGN,other/user/cUser/HeadDeny.html,0
+0,,Txxxx,/cUser/,guide,6,3,INCLUDE_DESIGN,other/user/cUser/Guide.html,0
+0,,Txxxx,/cUser/,guide,8,3,INCLUDE_DESIGN,other/user/cUser/GuideDeny.html,0
+0,,Txxxx,/cUser/,sideBarLeft,6,3,INCLUDE_DESIGN,other/user/cUser/SideBarLeft.html,0
+0,,Txxxx,/cUser/,sideBarLeft,8,3,INCLUDE_DESIGN,other/user/cUser/SideBarLeftDeny.html,0
+0,,Txxxx,/cUser/,sideBarRight,6,3,INCLUDE_DESIGN,other/user/cUser/SideBarRight.html,0
+0,,Txxxx,/cUser/,sideBarRight,8,3,INCLUDE_DESIGN,other/user/cUser/SideBarRightDeny.html,0
+0,,Txxxx,/cUser/,foot,6,3,INCLUDE_DESIGN,other/user/cUser/Foot.html,0
+0,,Txxxx,/cUser/,foot,8,3,INCLUDE_DESIGN,other/user/cUser/FootDeny.html,0

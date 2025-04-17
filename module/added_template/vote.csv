@@ -1,0 +1,12 @@
+0,,Txxxx,/nUser/,vote,6,3,REGIST_FORM_PAGE_DESIGN,vote/nUser/Regist.html,0
+0,,Txxxx,/nUser/,vote,6,3,REGIST_CHECK_PAGE_DESIGN,vote/nUser/RegistCheck.html,0
+0,,Txxxx,/nUser/,vote,6,3,REGIST_COMP_PAGE_DESIGN,vote/nUser/RegistComp.html,0
+0,,Txxxx,/nUser/,vote,6,3,REGIST_ERROR_DESIGN,vote/RegistError.html,0
+0,,Txxxx,/nUser/,vote,6,3,SEARCH_RESULT_DESIGN,vote/nUser/SearchResult.html,0
+0,,Txxxx,/nUser/,vote,6,3,SEARCH_NOT_FOUND_DESIGN,vote/nUser/SearchFailed.html,0
+0,,Txxxx,/nUser/,vote,6,3,SEARCH_LIST_PAGE_DESIGN,vote/nUser/List.html,0
+0,,Txxxx,/nUser/,voteSearchTable,6,3,INCLUDE_DESIGN,vote/SearchTable.html,0
+0,,Txxxx,/admin/,vote,6,3,SEARCH_RESULT_DESIGN,vote/admin/SearchResult.html,0
+0,,Txxxx,/admin/,vote,6,3,SEARCH_NOT_FOUND_DESIGN,vote/admin/SearchFailed.html,0
+0,,Txxxx,/admin/,vote,6,3,SEARCH_LIST_PAGE_DESIGN,vote/admin/List.html,0
+0,,Txxxx,/admin/,voteSearchTable,6,3,INCLUDE_DESIGN,vote/SearchTableAdmin.html,0

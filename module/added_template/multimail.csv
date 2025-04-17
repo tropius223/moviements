@@ -1,0 +1,5 @@
+48,,T0048,/admin/,multimail,6,3,REGIST_FORM_PAGE_DESIGN,multimail/admin/Regist.html,0
+45,,T0045,/admin/,multimail,6,3,REGIST_CHECK_PAGE_DESIGN,multimail/admin/RegistCheck.html,0
+46,,T0046,/admin/,multimail,6,3,REGIST_COMP_PAGE_DESIGN,multimail/admin/RegistComp.html,0
+47,,T0047,/admin/,multimail,6,3,REGIST_ERROR_DESIGN,multimail/RegistError.html,0
+146,,T0146,/notFound/,multimail,6,3,REGIST_FORM_PAGE_DESIGN,multimail/admin/RegistEmpty.html,0

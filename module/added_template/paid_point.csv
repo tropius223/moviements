@@ -1,0 +1,16 @@
+0,,Txxxx,/cUser/,paid_point,6,3,REGIST_FORM_PAGE_DESIGN,paid_point/cUser/Regist.html,0
+0,,Txxxx,/cUser/,paid_point,6,3,REGIST_CHECK_PAGE_DESIGN,paid_point/cUser/RegistCheck.html,0
+0,,Txxxx,/cUser/,paid_point,6,3,REGIST_COMP_PAGE_DESIGN,paid_point/cUser/RegistComp.html,0
+0,,Txxxx,/cUser/,paid_point,6,3,REGIST_ERROR_DESIGN,paid_point/RegistError.html,0
+0,,Txxxx,/cUser/,paid_point,6,3,SEARCH_RESULT_DESIGN,paid_point/cUser/SearchResult.html,0
+0,,Txxxx,/cUser/,paid_point,6,3,SEARCH_NOT_FOUND_DESIGN,paid_point/cUser/SearchFailed.html,0
+0,,Txxxx,/cUser/,paid_point,6,3,SEARCH_LIST_PAGE_DESIGN,paid_point/cUser/List.html,0
+0,,Txxxx,/cUser/,paid_pointSearchTable,6,3,INCLUDE_DESIGN,paid_point/SearchTable.html,0
+0,,Txxxx,/admin/,paid_point,6,3,SEARCH_RESULT_DESIGN,paid_point/admin/SearchResult.html,0
+0,,Txxxx,/admin/,paid_point,6,3,SEARCH_NOT_FOUND_DESIGN,paid_point/admin/SearchFailed.html,0
+0,,Txxxx,/admin/,paid_point,6,3,SEARCH_LIST_PAGE_DESIGN,paid_point/admin/List.html,0
+0,,Txxxx,/admin/,paid_pointSearchTable,6,3,INCLUDE_DESIGN,paid_point/SearchTableAdmin.html,0
+0,,Txxxx,/admin/,paid_point,6,3,REGIST_FORM_PAGE_DESIGN,paid_point/admin/Regist.html,0
+0,,Txxxx,/admin/,paid_point,6,3,REGIST_CHECK_PAGE_DESIGN,paid_point/admin/RegistCheck.html,0
+0,,Txxxx,/admin/,paid_point,6,3,REGIST_COMP_PAGE_DESIGN,paid_point/admin/RegistComp.html,0
+0,,Txxxx,/admin/,paid_point,6,3,REGIST_ERROR_DESIGN,paid_point/RegistError.html,0
