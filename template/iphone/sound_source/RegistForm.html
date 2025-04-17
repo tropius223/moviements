@@ -1,0 +1,95 @@
+<table>
+	<caption>音源情報</caption>
+	<tr>
+		<th><span class="required">[必須]</span>音源名</th>
+		<td colspan="2" class="(!--# syscode isValidateEx name #--)">
+			<!--# form text name 50 256 #-->
+			<!--# syscode ValidateEx #-->
+		</td>
+	</tr>
+<!--# ifbegin mod_on artist_enable #-->
+    <!--# ifbegin login admin #-->
+	<tr>
+		<th><span class="required">[必須]</span>アーティストID</th>
+		<td colspan="2" class="(!--# syscode isValidateEx owner #--)">
+			<!--# form text owner 50 256 #-->
+			<!--# syscode ValidateEx #-->
+		</td>
+	</tr>
+    <!--# endif #-->
+<!--# endif #-->
+	<tr>
+		<th>バナー</th>
+		<td colspan="2" class="(!--# syscode isValidateEx banner #--)">
+			<input type="hidden" name="MAX_FILE_SIZE" value="1048576"><!--# form file banner #-->
+			<!--# syscode ValidateEx #-->
+		</td>
+	</tr>
+	<tr>
+		<th><span class="required">[必須]</span>テキスト</th>
+		<td colspan="2" class="(!--# syscode isValidateEx text #--)">
+			<!--# form text text 50 256 #-->
+			<!--# syscode ValidateEx #-->
+		</td>
+	</tr>
+	<tr>
+		<th><span class="required">[必須]</span>URL</th>
+		<td colspan="2" class="(!--# syscode isValidateEx url #--)">
+			<!--# form text url 50 256 #--><br />
+			<!--# syscode ValidateEx #-->
+		</td>
+	</tr>
+	<tr>
+		<th><span class="required">[必須]</span>目標ポイント数</th>
+		<td colspan="2" class="(!--# syscode isValidateEx target_point #--)">
+			<!--# form text target_point 10 10 #--><br />
+			<!--# syscode ValidateEx #-->
+		</td>
+	</tr>
+<!--# ifbegin login admin #-->
+	<tr>
+		<th><span class="required"></span>獲得ポイント数</th>
+		<td colspan="2" class="(!--# syscode isValidateEx voted_point #--)">
+        		<!--# form text voted_point 10 10 #-->
+			<!--# syscode ValidateEx #-->
+		</td>
+	</tr>
+<!--# endif #-->
+	<tr>
+		<th>メモ(非公開)</th>
+		<td colspan="2" class="(!--# syscode isValidateEx term #--)">
+			<!--# form textarea term 40 5 #-->
+			<!--# syscode ValidateEx #-->
+		</td>
+	</tr>
+	<tr>
+		<th><span class="required">[必須]</span>公開設定</th>
+		<td colspan="2" class="(!--# syscode isValidateEx open #--)">
+			<!--# form radio open TRUE  TRUE/FALSE 公開/非公開 #-->
+			<!--# syscode ValidateEx #-->
+		</td>
+	</tr>
+	<tr>
+		<th>公開期限</th>
+		<td colspan="2" class="(!--# syscode isValidateEx use_limit_time/limit_year/limit_month/limit_day #--)">
+			<!--# form radio use_limit_time FALSE  FALSE/TRUE 設定しない/設定する #-->
+			西暦<!--# form text limit_year 4 4 (!--# code now y #--) #-->年
+			<!--# code num_option limit_month 12 (!--# code now m #--) 1 #-->月
+			<!--# code num_option limit_day 31 (!--# code now d #--) 1 #-->日
+			<!--# syscode ValidateEx #-->
+		</td>
+	</tr>
+<!--# ifbegin login admin #-->
+	<tr>
+		<th><span class="required"></span>処理状況</th>
+		<td colspan="2" class="(!--# syscode isValidateEx activate #--)">
+        		<!--# form radio activate (!--# value activate #--)  1/2/4 未確認/処理中/処理済 #-->
+			<!--# syscode ValidateEx #-->
+		</td>
+	</tr>
+<!--# endif #-->
+
+</table>
+<!--# ifbegin ! login admin #-->
+<!--# form hidden owner (!--# code loginid #--) #-->
+<!--# endif #-->

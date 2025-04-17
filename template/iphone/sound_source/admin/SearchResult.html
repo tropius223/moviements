@@ -1,0 +1,64 @@
+<!--# syscode searchResult setResultNum 20 #-->
+<!--# syscode searchResult setPagejumpNum 10 #-->
+<body>
+<div id="wrapper" class="admin">
+
+<!--# include head #-->
+<!--# include guide #-->
+
+<div id="contents">
+<div class="contents_body search clearfix">
+	<div class="contents_l">
+		<div class="h2 clearfix">
+			<h2>音源の検索</h2>
+			<p class="plus"><a href="regist.php?type=sound_source">音源の追加</a></p>
+		</div><!--h2 END-->
+		<div class="search_form">
+
+			<form action="search.php" method="get">
+			<!--# form hidden type #-->
+			<!--# form hidden run #-->
+
+			<!--# include sound_sourceSearchForm #-->
+			<p class="button"><input type="submit" class="search" value="検索" /></p>
+
+			</form>
+
+		</div><!--search_form END-->
+
+		<div class="pager clearfix">
+			<!--# syscode searchResult info #-->
+			<!--# syscode searchResult pageChange #-->
+		</div><!--pager END-->
+		<div class="list_table">
+			<table>
+				<tr>
+					<th style="width:7%;">バナー</th>
+					<th>音源名</th>
+<!--# ifbegin mod_on artist_enable #-->
+					<th>アーティスト</th>
+<!--# endif #-->
+					<th style="width:13%;"><a href="(!--# code sortLink regist #--)">登録日</a></th>
+					<th style="width:10%;"><a href="(!--# code sortLink target_point #--)">目標P</a></th>
+					<th style="width:10%;"><a href="(!--# code sortLink voted_point #--)">獲得済P</a></th>
+					<th style="width:6%;"><a href="(!--# code sortLink open #--)">状態</a></th>
+					<th style="width:10%;"><a href="(!--# code sortLink activate #--)">処理状況</a></th>
+					<th style="width:8%;">操作</th>
+				</tr>
+				<!--# syscode searchResult result #-->
+			</table>
+		</div><!--list_table END-->
+		<div class="pager clearfix">
+			<!--# syscode searchResult info #-->
+			<!--# syscode searchResult pageChange #-->
+		</div><!--pager END-->
+
+	</div><!--contents_l END-->
+
+</div><!--main_wrapper END-->
+</div><!--contents END-->
+
+<!--# include foot #-->
+
+</div><!--wrapper END-->
+</body>

@@ -1,0 +1,118 @@
+<body>
+<div id="wrapper" class="nobody">
+
+<!--# include head #-->
+<!--# include guide #-->
+
+<div id="contents">
+<div class="contents_body regist clearfix">
+
+	<div class="contents_l">
+		<div class="h2 clearfix">
+			<h2>システム設定変更</h2>
+		</div><!--h2 END-->
+		<p class="common">システム設定の変更を行ないます。必須項目を入力の上、送信して下さい。</p>
+		<div class="form_table">
+
+			<!--# variable form_begin #-->
+
+			<table>
+				<caption>システム設定</caption>
+				<tr>
+					<th style="width:30%;"><span class="required">[必須]</span>サイトのタイトル</th>
+					<td class="(!--# syscode isValidateEx site_title #--)">
+						<!--# form text site_title 50 128  (!--# ecode ime on #--) #-->
+						<!--# syscode validateEx #-->
+					</td>
+				</tr>
+				<tr>
+					<th><span class="required">[必須]</span>サイトのURL</th>
+					<td class="(!--# syscode isValidateEx home #--)">
+						<!--# form text home 50 256  (!--# ecode ime off #--) #-->
+						<!--# syscode validateEx #-->
+					</td>
+				</tr>
+				<tr>
+					<th><span class="required">[必須]</span>お問い合わせ/自動返信アドレス</th>
+					<td class="(!--# syscode isValidateEx mail_address #--)">
+						<!--# form text mail_address 50 256  (!--# ecode ime off #--) #-->
+						<!--# syscode validateEx #-->
+					</td>
+				</tr>
+				<tr>
+					<th><span class="required">[必須]</span>お問い合わせ/自動返信送信者名</th>
+					<td class="(!--# syscode isValidateEx mail_name #--)">
+						<!--# form text mail_name 50 256  (!--# ecode ime off #--) #-->
+						<!--# syscode validateEx #-->
+					</td>
+				</tr>
+				<tr>
+					<th><span class="required">[必須]</span>ポイント→円の換算レート</th>
+					<td class="(!--# syscode isValidateEx point_to_yen_rate #--)">
+						1ポイント＝<!--# form text point_to_yen_rate 4 8  (!--# ecode ime off #--) #-->円
+						<!--# syscode validateEx #-->
+					</td>
+				</tr>
+				<tr>
+					<th><span class="required">[必須]</span>ポイント投票のボーダー</th>
+					<td class="(!--# syscode isValidateEx minimum_payment #--)">
+						<!--# form text minimum_payment 8 8  (!--# ecode ime off #--) #-->P
+						<!--# syscode validateEx #-->
+					</td>
+				</tr>
+				<tr>
+					<th><span class="required">[必須]</span>会員登録時にプレゼントするポイント</th>
+					<td class="(!--# syscode isValidateEx def_point #--)">
+						<!--# form text def_point 8 8  (!--# ecode ime off #--) #-->ポイント
+						<!--# syscode validateEx #-->
+					</td>
+				</tr>
+				<tr>
+					<th>クリックポイント</th>
+					<td class="(!--# syscode isValidateEx use_click_point/click_point #--)">
+						ユーザーページにクリックポイントのリンクを<!--# form radio use_click_point   TRUE/FALSE 表示する/表示しない #--><br />
+						1日1回クリックで<!--# form text click_point 8 8  (!--# ecode ime off #--) #-->ポイントをプレゼント
+						<!--# syscode validateEx #-->
+					</td>
+				</tr>
+				<tr>
+					<th>アクセストレードAPIアクセスID</th>
+					<td class="(!--# syscode isValidateEx access_trade_access_id #--)">
+						<!--# form text access_trade_access_id 32 255  (!--# ecode ime off #--) #-->
+						<!--# syscode validateEx #-->
+					</td>
+				</tr>
+				<tr>
+					<th>AppDriverメディアID</th>
+					<td class="(!--# syscode isValidateEx appdriver_media_id #--)">
+						<!--# form text appdriver_media_id 32 255  (!--# ecode ime off #--) #-->
+						<!--# syscode validateEx #-->
+					</td>
+				</tr>
+				<tr>
+					<th>AppDriverサイトキー</th>
+					<td class="(!--# syscode isValidateEx appdriver_site_keys #--)">
+						<!--# form text appdriver_site_keys 32 255  (!--# ecode ime off #--) #-->
+						<!--# syscode validateEx #-->
+					</td>
+				</tr>
+			</table>
+
+			<div class="submit">
+				<ul>
+					<li><input type="submit" name="Submit" class="check" value="確認する" /></li>
+				</ul>
+			</div><!--submit END-->
+
+			<!--# variable form_end #-->
+
+		</div><!--form_table END-->
+	</div><!--contents_l END-->
+
+</div><!--main_wrapper END-->
+</div><!--contents END-->
+
+<!--# include foot #-->
+
+</div><!--wrapper END-->
+</body>

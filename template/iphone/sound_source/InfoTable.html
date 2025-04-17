@@ -1,0 +1,58 @@
+<table>
+	<caption>音源情報</caption>
+	<tr>
+		<th style="width:22%;">音源名</th>
+		<td><!--# value name #--></td>
+	</tr>
+<!--# ifbegin mod_on artist_enable #-->
+	<tr>
+		<th>アーティスト</th>
+		<td><!--# alias cUser owner id name #--></td>
+	</tr>
+<!--# endif #-->
+	<!--<tr>
+		<th>バナー</th>
+		<td><!--# object image banner option style="width:100%" #--></td>
+	</tr>-->
+	<tr>
+		<th>テキスト</th>
+		<td><!--# value text #--></td>
+	</tr>
+	<tr>
+		<th>URL</th>
+		<td>
+                    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="186" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="<!--# value url #-->"></iframe>
+		</td>
+	</tr>
+	<tr>
+    <th>映像化決定まで</th>
+    <td>
+        <!--# code comma (!--# calc (!--# value target_point #--) - (!--# value voted_point #--) #--) #-->
+    </td>
+</tr>
+<!--# ifbegin login admin #-->
+	<tr>
+		<th>換金済ポイント数</th>
+		<td>
+        		<!--# code comma (!--# value paid_point #--) #--> 
+		</td>
+	</tr>
+	<tr>
+		<th>メモ(非公開)</th>
+		<td>
+        		<!--# value term #-->
+		</td>
+	</tr>
+<!--# endif #-->
+	<tr>
+		<th>公開期限</th>
+		<td>
+			<!--# valueReplace use_limit_time TRUE/FALSE 設定する/設定しない #--><br />
+			<!--# ifbegin boolean use_limit_time #-->
+				西暦<!--# value limit_year #-->年
+				<!--# value limit_month #-->月
+				<!--# value limit_day #-->日
+			<!--# endif #-->
+		</td>
+	</tr>
+</table>

@@ -1,0 +1,18 @@
+<tr>
+	<td class="left"><a href="info.php?type=sound_source&id=(!--# value sound_source_id #--)"><!--# alias sound_source sound_source_id id name #--></a>（<!--# value sound_source_id #-->）</td>
+	<td class="left"><a href="info.php?type=nUser&id=(!--# value owner #--)"><!--# alias nUser owner id name #--></a>（<!--# value id #-->）</td>
+	<td class="right"><!--# value value_yen #-->P</td>
+<!--# ifbegin false #-->
+        <td>
+		<form name="form" method="post" style="margin: 0px 0px;">
+		<!--# form hidden post true #-->
+		<!--# form hidden id (!--# value id #--) #-->
+		<!--# ecode replaceGlobal post activate (!--# value activate #--) #-->
+		<!--# form radio activate (!--# value activate #--)  1/2/4 未処理/処理中/処理済 #-->
+		<!--# ecode restoreGlobal #-->
+		<input type="submit" value="変更">
+		</form>
+	</td>
+<!--# endif #-->
+	<td><!--# setTimeFormat Y/n/j\ G:i:s #--><!--# value regist #--></td>
+</tr>

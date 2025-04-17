@@ -1,0 +1,88 @@
+<body>
+<div id="wrapper" class="nobody">
+
+<!--# include head #-->
+<!--# include guide #-->
+
+<div id="contents">
+<div class="contents_body regist clearfix">
+
+	<div class="contents_l">
+		<div class="h2 clearfix">
+			<h2>システム設定変更</h2>
+		</div><!--h2 END-->
+		<p class="common">この内容で変更してよろしいですか？</p>
+		<div class="check_table">
+
+			<!--# variable form_begin #-->
+
+			<table>
+				<caption>システム設定</caption>
+				<tr>
+					<th style="width:20%;">サイトのタイトル</th>
+					<td><!--# value site_title #--></td>
+				</tr>
+				<tr>
+					<th>サイトのURL</th>
+					<td><!--# value home #--></td>
+				</tr>
+				<tr>
+					<th>お問い合わせ/自動返信アドレス</th>
+					<td><!--# value mail_address #--></td>
+				</tr>
+				<tr>
+					<th>お問い合わせ/自動返信送信者名</th>
+					<td><!--# value mail_name #--></td>
+				</tr>
+				<tr>
+					<th>ポイント→円の換算レート</th>
+					<td>1ポイント＝<!--# value point_to_yen_rate #-->円</td>
+				</tr>
+				<tr>
+					<th>換金申請のボーダー</th>
+					<td><!--# value minimum_payment #-->P</td>
+				</tr>
+				<tr>
+					<th>会員登録時にプレゼントするポイント</th>
+					<td><!--# value def_point #-->ポイント</td>
+				</tr>
+				<tr>
+					<th>クリックポイント</th>
+					<td>
+						ユーザーページにクリックポイントのリンクを<!--# valueReplace use_click_point TRUE/FALSE 表示する/表示しない #--><br />
+						1日1回クリックで<!--# value click_point #-->ポイントをプレゼント
+					</td>
+				</tr>
+				<tr>
+					<th>アクセストレードAPIアクセスID</th>
+					<td><!--# value access_trade_access_id #--></td>
+				</tr>
+				<tr>
+					<th>AppDriverメディアID</th>
+					<td><!--# value appdriver_media_id #--></td>
+				</tr>
+				<tr>
+					<th>AppDriverサイトキー</th>
+					<td><!--# value appdriver_site_key #--></td>
+				</tr>
+			</table>
+
+			<div class="submit">
+				<ul>
+					<li><input type="submit" name="back" class="back" value="戻る" /></li>
+					<li><input type="submit" name="Submit" class="edit" value="変更する" /></li>
+				</ul>
+			</div><!--submit END-->
+
+			<!--# variable form_end #-->
+
+		</div><!--form_table END-->
+	</div><!--contents_l END-->
+
+</div><!--main_wrapper END-->
+</div><!--contents END-->
+
+<!--# include foot #-->
+
+</div><!--wrapper END-->
+</body>

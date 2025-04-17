@@ -1,0 +1,43 @@
+<body>
+<div id="wrapper" class="admin">
+
+<!--# include head #-->
+<!--# include guide #-->
+
+<div id="contents">
+<div class="contents_body regist clearfix">
+	<div class="contents_l">
+		<div class="h2 clearfix">
+			<h2>音源の詳細</h2>
+		</div><!--h2 END-->
+		<div class="state_form clearfix">
+			<ul>
+				<li><a href="edit.php?type=sound_source&id=(!--# value id #--)" class="edit">編集</a></li>
+				<li><a href="edit.php?type=sound_source&id=(!--# value id #--)&delete=true" class="delete">削除</a></li>
+			</ul>
+			<form method="post" action="info.php?type=(!--# get type #--)&id=(!--# value id #--)">
+			<!--# form hidden post true #-->
+			<dl>
+				<dt>処理状況</dt>
+				<dd><label><!--# form radio activate   1 未確認 #--></label></dd>
+				<dd><label><!--# form radio activate   2 処理中 #--></label></dd>
+				<dd><label><!--# form radio activate   4 処理済 #--></label></dd>
+			</dl>
+			<p class="button"><input type="submit" value="更新する" /></p>
+			</form>
+		</div><!--state_form END-->
+
+		<div class="form_table">
+
+			<!--# include sound_sourceInfoTable #-->
+
+		</div><!--form_table END-->
+	</div><!--contents_l END-->
+
+</div><!--main_wrapper END-->
+</div><!--contents END-->
+
+<!--# include foot #-->
+
+</div><!--wrapper END-->
+</body>

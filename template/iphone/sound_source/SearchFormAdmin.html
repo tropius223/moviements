@@ -1,0 +1,30 @@
+<table>
+    <tr>
+        <th style="width:10%;">音源名</th>
+        <td>
+            <!--# form text name 32 256  (!--# ecode ime on #--) #-->
+            <input type="hidden" name="name_PAL[]" value="match like" />
+        </td>
+<!--# ifbegin mod_on artist_enable #-->
+        <th style="width:10%;">アーティスト</th>
+        <td>
+            <!--# form text artist_name 32 256  (!--# ecode ime on #--) #-->
+            <input type="hidden" name="cUser_alias" value="owner id match comp" />
+            <input type="hidden" name="cUser_alias_PAL[]" value="artist_name name match like" />
+        </td>
+    </tr>
+<!--# endif #-->
+    <tr>
+        <th>目標状況</th>
+        <td>
+            <!--# form checkbox success   1 目標達成 #-->
+            <input type="hidden" name="activate_PAL[]" value="match or" />
+        </td>
+        <th>処理状況</th>
+        <td>
+            <!--# form checkbox activate   1/2/4 未処理/処理中/処理済 #-->
+            <input type="hidden" name="activate_PAL[]" value="match or" />
+        </td>
+
+    </tr>
+</table>

@@ -1,0 +1,64 @@
+<table>
+	<caption>音源情報</caption>
+	<tr>
+		<th>音源名</th>
+		<td><!--# value name #--></td>
+	</tr>
+<!--# ifbegin mod_on artist_enable #-->
+	<tr>
+		<th>アーティスト</th>
+		<td><!--# alias cUser owner id name #--></td>
+	</tr>
+<!--# endif #-->
+	<tr>
+		<th>バナー</th>
+		<td><!--# object image banner #--></td>
+	</tr>
+	<tr>
+		<th>テキスト</th>
+		<td><!--# value text #--></td>
+	</tr>
+	<tr>
+		<th>URL</th>
+		<td>
+                    <!--# value url #-->
+		</td>
+	</tr>
+	<tr>
+		<th>目標ポイント数</th>
+		<td>
+			<!--# code comma (!--# value target_point #--) #--><br />
+		</td>
+	</tr>
+	<tr>
+		<th>獲得ポイント数</th>
+		<td>
+        		<!--# code comma (!--# value voted_point #--) #-->
+		</td>
+	</tr>
+	<tr>
+		<th>メモ(非公開)</th>
+		<td><!--# value term #--></td>
+	</tr>
+	<tr>
+		<th>公開設定</th>
+		<td><!--# valueReplace open TRUE/FALSE 公開/非公開 #--></td>
+	</tr>
+	<tr>
+		<th>公開期限</th>
+		<td>
+			<!--# valueReplace use_limit_time TRUE/FALSE 設定する/設定しない #--><br />
+			<!--# ifbegin boolean use_limit_time #-->
+				西暦<!--# value limit_year #-->年
+				<!--# value limit_month #-->月
+				<!--# value limit_day #-->日
+			<!--# endif #-->
+		</td>
+	</tr>
+	<tr>
+		<th>処理状況</th>
+		<td>
+                        <!--# valueReplace activate 1/2/4 未確認/処理中/処理済 #-->
+		</td>
+	</tr>
+</table>
