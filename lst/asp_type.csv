@@ -1,0 +1,7 @@
+id,string,,,Const
+system_id,string,,,
+name,string,,Null,Null
+param,string,,Null,Null
+point_param,string,,Null,Null
+use_parsent,boolean,Null,Null
+regist,timestamp

@@ -1,0 +1,8 @@
+id,string,,,,Const
+heading,string,,Null,Null
+text,string,,
+open_year,int
+open_month,int
+open_day,int
+open_time,timestamp
+regist,timestamp,,,,

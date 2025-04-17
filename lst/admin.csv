@@ -1,0 +1,10 @@
+id,char,5,,Const
+name,varchar,128,,
+mail,varchar,256,Null,Null/Mail
+pass1,varchar,128,Null/Pass:pass2,Null/Pass:pass2
+pass2,varchar,128,Null,Null
+activate,int,,,
+logout,timestamp,,,
+login,timestamp,,,
+old_login,timestamp,,,
+mail_time,timestamp,,,

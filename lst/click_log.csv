@@ -1,0 +1,6 @@
+id,char,8,,Const,,,レコードID
+nuser_id,char,8,,Const,,,ユーザーのレコードID
+click_adwares_id_list,string,,,Const,,,クリックされた広告のIDリスト
+pay_adwares_id_list,string,,,Const,,,成果発生済み広告のIDリスト
+regist,timestamp,,,Const,,,レコード登録時刻
+update_time,timestamp,,,Const,,,レコード更新時刻

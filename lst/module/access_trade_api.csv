@@ -1,0 +1,17 @@
+id,char,5,
+get_row,int,,,
+first_category,varchar,32,Null,Null
+second_category,varchar,32,,
+third_category,varchar,32,,
+import_category,varchar,32,,
+use_point_setting,boolean
+point,int,,,
+point_type,string,,,
+point_view_type,string
+point_view_value,int
+use_limit_setting,boolean
+limit_year,int,
+limit_month,int,
+limit_day,int,
+open_status,boolean,,Null,Null
+regist,timestamp

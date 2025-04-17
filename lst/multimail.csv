@@ -1,0 +1,5 @@
+id,string,,,Const
+receive_id,string,,,
+sub,string,,Null,Null
+main,string,,Null,Null
+regist,timestamp,,,

@@ -1,0 +1,14 @@
+id,char,8,,
+category,int,,,
+topics,varchar,255,Null,Null
+open_year,int,,Null/Date:open_month:open_day,Null/Date:open_month:open_day
+open_month,int,,Null,Null
+open_day,int,,Null,Null
+open_time,timestamp,,,
+detail_mode,int,,,
+use_link_message,boolean,,,
+link_message,varchar,255,NullFlag:use_link_message:TRUE,NullFlag:use_link_message:TRUE
+detail_message,string,,NullFlag:detail_mode:1,NullFlag:detail_mode:1
+link_url,string,,NullFlag:detail_mode:2/Uri,NullFlag:detail_mode:2/Uri
+activate,int,,Null,Null
+regist,timestamp,,,

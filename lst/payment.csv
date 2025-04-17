@@ -1,0 +1,7 @@
+id,string,,,Const
+owner,string
+value,int,,,
+value_yen,int,,Null/MaxOver:owner/Minimum,,
+activate,int
+regist,timestamp
+edit,timestamp

@@ -1,0 +1,7 @@
+id,string,,,Const
+owner,string
+adwares,string
+point,int
+point_yen,int
+state,int
+regist,timestamp

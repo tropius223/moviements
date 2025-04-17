@@ -1,0 +1,4 @@
+id,string,,,Const
+name,string
+regist,timestamp
+edit,timestamp

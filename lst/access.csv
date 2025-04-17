@@ -1,0 +1,6 @@
+id,string,,,Const
+owner,string
+adwares,string
+ip,string
+user_agent,string
+regist,timestamp

@@ -1,0 +1,5 @@
+id,string,,,Const
+name,string,,Null,Null
+mail,string,,Null,Null
+main,string,,Null,Null
+regist,timestamp

@@ -1,0 +1,6 @@
+id,string,,,Const
+kickback_id,string
+owner,string
+point,int
+state,int
+regist,timestamp

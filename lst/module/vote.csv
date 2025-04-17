@@ -1,0 +1,8 @@
+id,string,,,Const
+owner,string
+sound_source_id,string,,Null,Const
+value,int,,,
+value_yen,int,,Null/MaxOver:owner/Minimum,,
+activate,int
+regist,timestamp
+edit,timestamp
