@@ -1,0 +1,48 @@
+<script type="text/javascript" src="./common/js/multimail.js"></script>
+
+<body>
+<div id="wrapper" class="nobody">
+
+<!--# include head #-->
+<!--# include guide #-->
+
+<div id="contents">
+<div class="contents_body regist clearfix">
+
+	<div class="contents_l">
+		<div class="h2 clearfix">
+			<h2>一括メール送信</h2>
+		</div><!--h2 END-->
+		<div class="message">
+			<p>メールを送信しています…。</p>
+			<div id="main_message" style="width:300px;margin:auto;">
+			<img src="./img/ajax-loader.gif"><br>
+			<br>
+			<div id="mail_count" ></div><br>
+			<div id="mail_success" ></div><br>
+			</div>
+			<ul>
+				<li><a href="index.php">トップページに戻る</a></li>
+			</ul>
+		</div><!--message END-->
+	</div><!--contents_l END-->
+
+</div><!--main_wrapper END-->
+</div><!--contents END-->
+
+<!--# include foot #-->
+
+</div><!--wrapper END-->
+
+<form name="mail">
+  <!--# form hidden receive_id #-->
+  <!--# form hidden sub #-->
+  <!--# form hidden main #-->
+</form>
+<script language="JavaScript">
+<!--//
+onLoad = sendMailStart();
+-->
+</script>
+
+</body>

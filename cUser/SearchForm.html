@@ -1,0 +1,47 @@
+			<table>
+				<tr>
+					<th style="width:7%;">ID</th>
+					<td>
+						<!--# form text id 10 128  (!--# ecode ime off #--) #-->
+						<input type="hidden" name="id_PAL[]" value="match comp" />
+					</td>
+					<th style="width:8%;">名前</th>
+					<td>
+						<!--# form text name 28 128  (!--# ecode ime on #--) #-->
+						<input type="hidden" name="name_PAL[]" value="match like" />
+					</td>
+                    <th style="width:13%;">メールアドレス</th>
+					<td>
+						<!--# form text mail 40 255  (!--# ecode ime off #--) #-->
+						<input type="hidden" name="mail_PAL[]" value="match like" />
+					</td>
+				</tr>
+				<tr>
+                    <th>性別</th>
+					<td>
+						<!--# form checkbox sex   男性/女性 男性/女性 #-->
+						<input type="hidden" name="sex_PAL[]" value="match or" />
+                    </td>
+					<th>住所</th>
+					<td>
+						<!--# code tableSelectForm adds prefectures name id  全て #--><br />
+	                    <input type="hidden" name="adds_PAL[]" value="match comp" />
+					</td>
+					<th>アクティベート</th>
+					<td>
+						<!--# form checkbox activate   1/4/8 未アクティベート/アクティベート済み/利用拒否 #-->
+	                    <input type="hidden" name="activate_PAL[]" value="match or" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">&nbsp;</td>
+					<th>市区町村</th>
+					<td>
+						<!--# form text add_sub 24 128 #-->
+    	                <input type="hidden" name="add_sub_PAL[]" value="match like" />
+					</td>
+					<td colspan="2">&nbsp;</td>
+				</tr>
+			</table>
+			<!--# form hidden _thisMonth #-->
+			<!--# form hidden _previousMonth #-->

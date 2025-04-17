@@ -1,0 +1,93 @@
+<table>
+	<caption>広告情報</caption>
+	<tr>
+		<th style="width:20%;">広告ASP選択</th>
+		<td><!--# alias asp_type asp_type id name #--></td>
+	</tr>
+	<tr>
+		<th>広告名</th>
+		<td><!--# value name #--></td>
+	</tr>
+
+	<tr>
+		<th>カテゴリ</th>
+		<td><!--# alias category category id name #--></td>
+	</tr>
+	<tr>
+		<th>バナー</th>
+		<td><!--# object image banner #--></td>
+	</tr>
+	<tr>
+		<th>テキスト</th>
+		<td><!--# value text #--></td>
+	</tr>
+	<tr>
+		<th>URL</th>
+		<td>
+		  	<!--# ifbegin equal use_carrier_url #-->
+				<!--# value url #-->
+			<!--# endif #-->
+		  	<!--# ifbegin not equal use_carrier_url #-->
+			<dl class="clearfix">
+				<dt>docomo</dt>
+				<dd><!--# value url_docomo #--></dd>
+				<dt>au</dt>
+				<dd><!--# value url_au #--></dd>
+				<dt>softbank</dt>
+				<dd><!--# value url_softbank #--></dd>
+				<dt>iPhone</dt>
+				<dd><!--# value url_iphone #--></dd>
+				<dt>Android</dt>
+				<dd><!--# value url_android #--></dd>
+			</dl>
+			<!--# endif #-->
+		</td>
+	</tr>
+	<tr>
+		<th>ポイント獲得条件</th>
+		<td><!--# value term #--></td>
+	</tr>
+	<tr>
+		<th>成功報酬</th>
+		<td>
+			<!--# value point #-->
+			<!--# valueReplace point_type f/p ポイント/パーセント #--><br />
+
+			<!--# ifbegin equal point_type p #-->
+
+				<!--# ifbegin nullcheck point_view_type #-->
+					ユーザー画面には<!--# valueReplace point_view_type f/p ポイント/パーセント #-->で表示
+				<!--# endif #-->
+
+				<!--# ifbegin equal point_view_type f #-->
+				(
+					<!--# value point_view_value #-->ポイント × <!--# value point #-->パーセント ＝
+					<!--# calc (int)( (!--# value point_view_value #--) * (!--# value point #--) ) / 100.0 #-->ポイント
+				)
+				<!--# endif #-->
+
+			<!--# endif #-->
+		</td>
+	</tr>
+	<tr>
+		<th>ティア報酬</th>
+		<td colspan="3">
+			報酬の<!--# value parent_rate #-->％<br />
+		</td>
+	</tr>
+	<tr>
+		<th>公開設定</th>
+		<td><!--# valueReplace open TRUE/FALSE 公開/非公開 #--></td>
+	</tr>
+	<tr>
+		<th>公開期限</th>
+		<td>
+			<!--# valueReplace use_limit_time TRUE/FALSE 設定する/設定しない #--><br />
+			<!--# ifbegin boolean use_limit_time #-->
+				西暦<!--# value limit_year #-->年
+				<!--# value limit_month #-->月
+				<!--# value limit_day #-->日
+			<!--# endif #-->
+		</td>
+	</tr>
+</table>

@@ -1,0 +1,27 @@
+<!--# readhead head #-->
+<!--# readend #-->
+
+<!--# readhead element #-->
+	<li>
+		<p class="image">
+			<span class="point">
+			<!--# ifbegin equal point_type f #-->
+			<span><!--# value point #--></span>pt
+			<!--# else #-->
+				<!--# ifbegin equal point_view_type f #-->
+				<span><!--# calc (int)( (!--# value point_view_value #--) * (!--# value point #--) ) / 100.0 #--></span>pt
+				<!--# else #-->
+				<span><!--# value point #--></span>%
+				<!--# endif #-->
+			<!--# endif #-->
+			</span>
+
+			<a href="info.php?type=adwares&id=(!--# value id #--)"><!--# object imageSize banner 112 84 #--></a>
+		</p>
+		<p class="title"><a href="info.php?type=adwares&id=(!--# value id #--)"><!--# value name #--></a></p>
+		<p class="text"><!--# value text #--></p>
+	</li>
+<!--# readend #-->
+
+<!--# readhead foot #-->
+<!--# readend #-->

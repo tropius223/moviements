@@ -1,0 +1,53 @@
+<body>
+<div id="wrapper" class="admin">
+
+<!--# include head #-->
+<!--# include guide #-->
+
+<div id="contents">
+<div class="contents_body regist clearfix">
+	<div class="contents_l">
+		<div class="h2 clearfix">
+			<h2>一括メール送信</h2>
+		</div><!--h2 END-->
+		<p class="common">全ユーザーに一括でメールを送信します。<br />※メール送信にはAJAX技術を使用しています。送信完了の表示が出るまでブラウザを閉じないようご注意ください。</p>
+		<div class="form_table">
+
+			<!--# variable form_begin #-->
+
+			<table>
+				<caption>メール情報</caption>
+				<tr>
+					<th style="width:15%;"><span class="required">[必須]</span>件名</th>
+					<td class="(!--# syscode isValidateEx sub #--)">
+						<!--# form text sub 32 256  (!--# ecode ime on #--) #-->
+						<!--# syscode validateEx #-->
+					</td>
+				</tr>
+				<tr>
+					<th><span class="required">[必須]</span>本文</th>
+					<td class="(!--# syscode isValidateEx main #--)">
+						<!--# form textarea main 50 20  (!--# ecode ime on #--) #-->
+						<!--# syscode validateEx #-->
+					</td>
+				</tr>
+			</table>
+			<div class="submit">
+				<ul>
+					<li><input type="submit" name="Submit" class="check" value="確認する" /></li>
+				</ul>
+			</div><!--submit END-->
+
+			<!--# variable form_end #-->
+
+		</div><!--form_table END-->
+
+	</div><!--contents_l END-->
+
+</div><!--main_wrapper END-->
+</div><!--contents END-->
+
+<!--# include foot #-->
+
+</div><!--wrapper END-->
+</body>

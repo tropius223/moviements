@@ -1,0 +1,36 @@
+<!--# readhead head #-->
+	<table>
+		<caption>プレビュー</caption>
+<!--# readend #-->
+
+<!--# readhead list #-->
+	<tr>
+		<td class="left">
+			<!--# ifbegin nullcheck banner #-->
+				<!--# object image banner #-->
+			<!--# endif #-->
+			<!--# ifbegin not nullcheck banner #-->
+				<a class="img_200x40"><span>No Image</span></a>
+			<!--# endif #-->
+		</td>
+		<td class="left"><!--# value name #--></td>
+		<td class="left"><!--# alias category category id name #--></td>
+		<td class="right"><!--# value point #--><!--# valueReplace point_type f/p ポイント/パーセント #--></td>
+		<td>
+			<!--# ifbegin nullcheck use_limit #-->
+				<!--# value limit_year #-->/<!--# value limit_month #-->/<!--# value limit_day #-->まで
+			<!--# endif #-->
+			<!--# ifbegin not nullcheck use_limit #-->
+				有効期限なし
+			<!--# endif #-->
+		</td>
+	</tr>
+<!--# readend #-->
+
+<!--# readhead foot #-->
+	</table>
+<!--# readend #-->
+
+<!--# readhead count #-->
+	<p>以上の<!--# variable count #-->件が登録されます</p>
+<!--# readend #-->

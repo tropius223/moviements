@@ -1,0 +1,55 @@
+<body>
+<div id="wrapper" class="admin">
+
+<!--# include head #-->
+<!--# include guide #-->
+
+<div id="contents">
+<div class="contents_body regist clearfix">
+	<div class="contents_l">
+		<div class="h2 clearfix">
+			<h2>ASPの編集</h2>
+		</div><!--h2 END-->
+		<p class="common">この内容で編集してよろしいですか？</p>
+		<div class="form_table">
+
+			<!--# variable form_begin #-->
+
+			<table>
+				<caption>ASPサービス</caption>
+				<tr>
+					<th style="width:20%;">サービス名</th>
+					<td><!--# value name #--></td>
+				</tr>
+				<tr>
+					<th>送信パラメータ</th>
+					<td><!--# value param #--></td>
+				</tr>
+				<tr>
+					<th>報酬パラメータ</th>
+					<td><!--# value point_param #--></td>
+				</tr>
+				<tr>
+					<th>歩合報酬の有無</th>
+					<td><!--# valueReplace use_parsent TRUE/FALSE 設定可能/設定付加 #--></td>
+				</tr>
+			</table>
+			<div class="submit">
+				<ul>
+					<li><input type="submit" name="back" class="back" value="戻る" /></li>
+					<li><input type="submit" name="Submit" class="edit" value="編集する" /></li>
+				</ul>
+			</div><!--submit END-->
+
+			<!--# variable form_end #-->
+
+		</div><!--form_table END-->
+	</div><!--contents_l END-->
+
+</div><!--main_wrapper END-->
+</div><!--contents END-->
+
+<!--# include foot #-->
+
+</div><!--wrapper END-->
+</body>

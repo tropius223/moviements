@@ -1,0 +1,118 @@
+<body>
+<div id="wrapper" class="nobody">
+
+<!--# include head #-->
+<!--# include guide #-->
+
+<div id="contents">
+<div class="contents_body regist clearfix">
+
+	<div class="contents_l">
+		<div class="h2 clearfix">
+			<h2>広告インポート</h2>
+		</div><!--h2 END-->
+		<div class="form_table">
+
+			<!--# variable form_begin #-->
+
+			<table>
+				<caption>取得設定</caption>
+
+				<tr>
+					<th style="width:30%;">件数</th>
+					<td>
+						<!--# ifbegin nullcheck get_row #-->
+							<!--# value get_row #-->件
+						<!--# endif #-->
+						<!--# ifbegin not nullcheck get_row #-->
+							全件
+						<!--# endif #-->
+					</td>
+				</tr>
+
+				<tr>
+					<th>カテゴリ</th>
+					<td>
+						<!--# alias accessTradeFirstCategory first_category id name #-->
+						<!--# alias accessTradeSecondCategory second_category id name #-->
+						<!--# alias accessTradeSecondCategory third_category id name #-->
+						の広告を
+						<!--# ifbegin nullcheck import_category #-->
+						<!--# alias category import_category id name #-->
+						<!--# endif #-->
+						<!--# ifbegin not nullcheck import_category #-->
+						全て
+						<!--# endif #-->
+						として取り込む
+					</td>
+				</tr>
+
+				<tr>
+				<th>成功報酬</th>
+					<td>
+						<!--# ifbegin boolean use_point_setting #-->
+							▼一括設定<br />
+							<!--# value point #-->
+							<!--# valueReplace point_type f/p ポイント/パーセント #--><br />
+							<!--# ifbegin equal point_type p #-->
+								<!--# ifbegin nullcheck point_view_type #-->
+									ユーザー画面には<!--# valueReplace point_view_type f/p ポイント/パーセント #-->で表示
+								<!--# endif #-->
+								<!--# ifbegin equal point_view_type f #-->
+									(
+									<!--# value point_view_value #-->ポイント × <!--# value point #-->パーセント ＝
+									<!--# calc (int)( (!--# value point_view_value #--) * (!--# value point #--) ) / 100.0 #-->ポイント
+									)
+								<!--# endif #-->
+							<!--# endif #-->
+						<!--# endif #-->
+						<!--# ifbegin not boolean use_point_setting #-->
+							オリジナルの値を使用
+						<!--# endif #-->
+					</td>
+				</tr>
+
+				<tr>
+					<th>公開期限</th>
+					<td>
+						<!--# ifbegin boolean use_limit_setting #-->
+							▼一括設定<br />
+							西暦<!--# value limit_year #-->年
+							<!--# value limit_month #-->月
+							<!--# value limit_day #-->日
+						<!--# endif #-->
+						<!--# ifbegin not boolean use_limit_setting #-->
+							オリジナルの値を使用
+						<!--# endif #-->
+					</td>
+				</tr>
+
+				<tr>
+				<th width="30%">公開状態</th>
+				<td width="70%">
+				取り込んだ広告は[ <!--# valueReplace open_status TRUE/FALSE 公開/非公開 #--> ]にする
+				</td>
+				</tr>
+
+				</table>
+
+				<!--# mod accessTradeAPI drawPreview #-->
+
+			<div class="submit">
+				<ul>
+					<li><input type="submit" name="Submit" class="check" value="確認する" /></li>
+				</ul>
+			</div><!--submit END-->
+
+			<!--# variable form_end #-->
+
+		</div><!--form_table END-->
+	</div><!--contents_l END-->
+
+</div><!--main_wrapper END-->
+</div><!--contents END-->
+
+<!--# include foot #-->
+
+</div><!--wrapper END-->
+</body>
