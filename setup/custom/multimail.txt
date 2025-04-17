@@ -1,0 +1,8 @@
+define table multimail
+	id = MM*******
+
+handle multimail
+	regist = admin/6
+		*,comp = *,multimail/*
+	regist = notFound/6
+		form = *NotFound

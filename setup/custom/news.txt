@@ -1,0 +1,14 @@
+define table news
+	id = NW******
+
+handle news
+	regist = admin/6
+		* = *
+	edit   = admin/6
+		* = *
+	delete = admin/6
+		* = *
+	info   = admin/6
+		* = *
+	search = nobody/15,nUser/6,admin/6
+		list = *

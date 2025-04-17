@@ -1,0 +1,12 @@
+define table payment
+	id = P*******
+
+handle payment
+	regist = nUser/6
+		* = *
+	search = nUser/6
+		* = *
+	search = admin/6
+		*,list = *,*Admin
+	info   = admin/6
+		* = *

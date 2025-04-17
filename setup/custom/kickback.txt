@@ -1,0 +1,8 @@
+define table kickback
+	id = K*******
+
+handle kickback
+	search = nUser/6
+		* = *
+	search = admin/6
+		*,list = *,*Admin

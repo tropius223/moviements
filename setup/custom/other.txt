@@ -1,0 +1,24 @@
+use other domain
+	nobody/15 = domain
+
+label
+	MINIMUM_PAYMENT_DESIGN = other/minimumPayment.html
+
+use include guide
+	nobody/15 = *Nobody
+	nUser/6   = *NUser
+	admin/6   = *Admin
+
+use include sideBar
+	nobody/15 = *Nobody
+	nUser/6   = *NUser
+	admin/6   = *Admin
+
+use QUICK_DESIGN nUser
+	nUser/6 = quick/Set
+
+use QUICK_FALED_DESIGN login
+	nobody/15,nUser/6,admin/6 = quick/LoginFaled
+
+use QUICK_FALED_DESIGN set
+	nobody/15,nUser/6,admin/6 = quick/SetFaled

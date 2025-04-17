@@ -1,0 +1,11 @@
+define table sendmail
+	id = SM*******
+
+label
+	SEND_MAIL = mail_contents/sendmail.txt
+
+handle sendmail
+	regist = nobody/15
+		* = *
+	regist = nUser/6
+		*,form = *,*NUser

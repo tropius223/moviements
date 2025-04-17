@@ -1,0 +1,20 @@
+define table adwares
+	id = AC*******
+
+handle adwares
+	regist = admin/6
+		* = *
+	edit   = admin/6
+		* = *
+	delete = admin/6
+		* = *
+	search = nUser/6
+		* = *
+	search = admin/6
+		*,list = *,*Admin
+	info   = nUser/6
+		* = *
+	info   = admin/6
+		* = *Admin
+	info   = exists/6
+		* = *Exists

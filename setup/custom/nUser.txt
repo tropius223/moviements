@@ -1,0 +1,39 @@
+define user nUser
+	id = N*******
+
+use head,foot
+	nUser/15 = *
+
+use index
+	nUser/6 = *
+	nUser/8 = base/*Deny
+
+use pageChange
+	nUser/6 = *
+
+handle nUser
+	regist = nobody/15
+		* = *
+	edit   = admin/6
+		* = *
+	editSelf = nUser/6
+		* = *
+	delete = admin/6
+		* = *
+	deleteSelf = nUser/6
+		* = *
+	search = admin/6
+		* = *
+	info = admin/6
+		* = *Admin
+	infoSelf = nUser/6
+		* = *
+
+use REGIST_FORM_PAGE_DESIGN1 nUser
+	nobody/15 = nUser/Regist1
+
+use REGIST_FORM_PAGE_DESIGN2 nUser
+	nobody/15 = nUser/Regist2
+
+use REGIST_FORM_PAGE_DESIGN3 nUser
+	nobody/15 = nUser/Regist3

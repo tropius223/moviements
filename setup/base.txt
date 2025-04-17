@@ -1,0 +1,59 @@
+define user admin
+	id = ADMIN
+
+define table system
+	id =
+
+define table template
+	id = T****
+
+use head,foot,index,login,loginFaled,pageChange
+	nobody/15 = base/*
+
+use head,foot,index,pageChange
+	admin/6 = *
+
+handle admin
+	editSelf = admin/6
+		* = *
+
+handle system
+	edit = admin/6
+		* = *
+
+label
+	ERROR_PAGE_DESIGN          = base/Error.html
+	ACTIVATE_DESIGN_HTML       = base/Activate.html
+	ACTIVATE_FALED_DESIGN_HTML = base/ActivateFaled.html
+	REGIST_FALED_DESIGN        = base/RegistFaled.html
+	ACTIVATE_MAIL              = mail_contents/activate.txt
+	ACTIVATE_COMP_MAIL         = mail_contents/activatecomp.txt
+	REGIST_COMP_MAIL           = mail_contents/registcomp.txt
+
+define conf
+	$NOT_LOGIN_USER_TYPE         = 'nobody';
+	$NOT_HEADER_FOOTER_USER_TYPE = 'nothf';
+	$LOGIN_KEY_FORM_NAME         = 'mail';
+	$LOGIN_PASSWD_FORM_NAME      = 'passwd';
+	$ADD_LOG                     = true;
+	$UPDATE_LOG                  = true;
+	$DELETE_LOG                  = true;
+	$SESSION_NAME                = 'loginid';
+	$COOKIE_NAME                 = 'loginid';
+	$ACTIVE_NONE                 = 1;
+	$ACTIVE_ACTIVATE             = 2;
+	$ACTIVE_ACCEPT               = 4;
+	$ACTIVE_DENY                 = 8;
+	$ACTIVE_ALL                  = 15;
+	$template_path               = './template/pc/';
+	$system_path                 = './custom/system/';
+	$FORM_TAG_DRAW_FLAG          = 'variable';
+	$DB_LOG_FILE                 = './logs/dbaccess.log';
+	$COOKIE_PATH                 = '/';
+	$terminal_type               = 0;
+	$sid                         = '';
+	include_once './custom/extends/sqlConf.php';
+	include_once './custom/extends/mobileConf.php';
+	//include_once './include/extends/';
+	//include_once './include/extends/MobileUtil.php';
+	$js_file_paths[ 'all' ][ 'jquery' ] = './js/jquery.js';

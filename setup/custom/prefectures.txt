@@ -1,0 +1,2 @@
+define table prefectures
+	id = PF**
