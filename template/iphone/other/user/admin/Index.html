@@ -1,0 +1,167 @@
+<body>
+<div id="wrapper" class="admin">
+
+<!--# include head #-->
+<!--# include guide #-->
+
+<div id="contents">
+<div class="contents_body index clearfix">
+
+	<!--# include sideBarLeft #-->
+
+	<div class="contents_m">
+<!--# ifbegin ! val= (!--# code getRow nUser activate = 1 #--) 0 #-->
+		<div class="information">
+			<p>未認証のユーザーが<a href="search.php?type=nUser&run=true&activate=1&activate_PAL[]=match comp"><!--# code getRow nUser activate = 1 #-->件</a>あります。（<a href="search.php?type=nUser&run=true">ユーザーの一覧を見る</a>）</p>
+		</div><!--information END-->
+<!--# endif #-->
+<!--# ifbegin mod_on artist_enable #-->
+    <!--# ifbegin ! val= (!--# code getRow cUser activate = 1 #--) 0 #-->
+		<div class="information">
+			<p>未認証のアーティストが<a href="search.php?type=cUser&run=true&activate=1&activate_PAL[]=match comp"><!--# code getRow cUser activate = 1 #-->件</a>あります。（<a href="search.php?type=cUser&run=true">アーティストの一覧を見る</a>）</p>
+		</div><!--information END-->
+    <!--# endif #-->
+<!--# endif #-->
+		<div class="system_state clearfix">
+			<div class="system_table">
+				<table>
+					<caption>ユーザー情報</caption>
+					<tr>
+						<th style="width:75%;">今月の新規登録数</th>
+						<td><a href="search.php?type=nUser&run=true&_thisMonth=true"><!--# code getRow nUser regist > (!--# mod time timestamp thisMonth firstDay #--) #-->件</a></td>
+					</tr>
+					<tr>
+						<th>先月の新規登録数</th>
+						<td><a href="search.php?type=nUser&run=true&_previousMonth=true"><!--# code getRow nUser regist > (!--# mod time timestamp previousMonth firstDay #--) regist < (!--# mod time timestamp thisMonth firstDay #--) #-->件</a></td>
+					</tr>
+					<tr>
+						<th>未アクティベートユーザー</th>
+						<td><a href="search.php?type=nUser&run=true&activate=1&activate_PAL[]=match comp"><!--# code getRow nUser activate = 1 #-->件</a></td>
+					</tr>
+					<tr>
+						<th>アクティベート済みユーザー</th>
+						<td><a href="search.php?type=nUser&run=true&activate=4&activate_PAL[]=match comp"><!--# code getRow nUser activate = 4 #-->件</a></td>
+					</tr>
+					<tr>
+						<th>利用拒否ユーザー</th>
+						<td><a href="search.php?type=nUser&run=true&activate=8&activate_PAL[]=match comp"><!--# code getRow nUser activate = 8 #-->件</a></td>
+					</tr>
+					<tr>
+						<th>総ユーザー数</th>
+						<td><a href="search.php?type=nUser&run=true"><!--# code getRow nUser #-->件</a></td>
+					</tr>
+				</table>
+				<p class="more"><a href="search.php?type=nUser&run=true">ユーザーの一覧</a></p>
+			</div><!--system_table END-->
+			<div class="system_table">
+				<table>
+					<caption>成果情報</caption>
+					<tr>
+						<th style="width:75%;">成果件数</th>
+						<td><a href="search.php?type=kickback&run=true"><!--# code getRow kickback #-->件</a></td>
+					</tr>
+					<tr>
+						<th>成果合計額</th>
+						<td><!--# code getSum kickback point_yen #-->円</td>
+					</tr>
+				</table>
+				<p class="more"><a href="search.php?type=kickback&run=true">成果情報の一覧</a></p>
+			</div><!--system_table END-->
+<!--# ifbegin false #-->
+			<div class="system_table">
+				<table>
+					<caption>換金申請情報</caption>
+					<tr>
+						<th style="width:50%;">未確認の換金申請</th>
+						<td style="width:25%;"><a href="search.php?type=payment&run=true&activate=1&activate_PAL[]=match comp"><!--# code getRow payment activate = 1 #-->件</a></td>
+						<td><a href="search.php?type=payment&run=true&activate=1&activate_PAL[]=match comp"><!--# code getSum payment value_yen activate = 1 #-->円</a></td>
+					</tr>
+					<tr>
+						<th>処理中の換金申請</th>
+						<td><a href="search.php?type=payment&run=true&activate=2&activate_PAL[]=match comp"><!--# code getRow payment activate = 2 #-->件</a></td>
+						<td><a href="search.php?type=payment&run=true&activate=2&activate_PAL[]=match comp"><!--# code getSum payment value_yen activate = 2 #-->円</a></td>
+					</tr>
+					<tr>
+						<th>完了済みの換金申請</th>
+						<td><a href="search.php?type=payment&run=true&activate=4&activate_PAL[]=match comp"><!--# code getRow payment activate = 4 #-->件</a></td>
+						<td><a href="search.php?type=payment&run=true&activate=4&activate_PAL[]=match comp"><!--# code getSum payment value_yen activate = 4 #-->円</a></td>
+					</tr>
+				</table>
+				<p class="more"><a href="search.php?type=payment&run=true">換金申請一覧</a></p>
+			</div><!--system_table END-->
+<!--# endif #-->
+		</div><!--system_state END-->
+		<div class="track">
+			<p><label>トラッキングURL:<input type="text" value="(!--# ecode getSiteProfile home #--)track.php?aid=(aid)" onfocus="this.select()" size="80" /></label><span class="notes">※（aid）はアクセスIDに動的に置換してください。</span></p>
+		</div><!--track END-->
+
+		<div class="system_state clearfix">
+<!--# ifbegin mod_on artist_enable #-->
+			<div class="system_table">
+				<table>
+					<caption>アーティスト情報</caption>
+					<tr>
+						<th style="width:75%;">今月の新規登録数</th>
+						<td><a href="search.php?type=cUser&run=true&_thisMonth=true"><!--# code getRow cUser regist > (!--# mod time timestamp thisMonth firstDay #--) #-->件</a></td>
+					</tr>
+					<tr>
+						<th>先月の新規登録数</th>
+						<td><a href="search.php?type=cUser&run=true&_previousMonth=true"><!--# code getRow cUser regist > (!--# mod time timestamp previousMonth firstDay #--) regist < (!--# mod time timestamp thisMonth firstDay #--) #-->件</a></td>
+					</tr>
+					<tr>
+						<th>未アクティベートユーザー</th>
+						<td><a href="search.php?type=cUser&run=true&activate=1&activate_PAL[]=match comp"><!--# code getRow cUser activate = 1 #-->件</a></td>
+					</tr>
+					<tr>
+						<th>アクティベート済みユーザー</th>
+						<td><a href="search.php?type=cUser&run=true&activate=4&activate_PAL[]=match comp"><!--# code getRow cUser activate = 4 #-->件</a></td>
+					</tr>
+					<tr>
+						<th>利用拒否ユーザー</th>
+						<td><a href="search.php?type=cUser&run=true&activate=8&activate_PAL[]=match comp"><!--# code getRow cUser activate = 8 #-->件</a></td>
+					</tr>
+					<tr>
+						<th>総ユーザー数</th>
+						<td><a href="search.php?type=cUser&run=true"><!--# code getRow cUser #-->件</a></td>
+					</tr>
+				</table>
+				<p class="more"><a href="search.php?type=cUser&run=true">ユーザーの一覧</a></p>
+			</div><!--system_table END-->
+<!--# endif #-->
+			<div class="system_table">
+				<table>
+					<caption>音源情報</caption>
+					<tr>
+						<th style="width:75%;">音源件数</th>
+						<td><a href="search.php?type=sound_source&run=true"><!--# code getRow sound_source #-->件</a></td>
+					</tr>
+				</table>
+				<p class="more"><a href="search.php?type=sound_source&run=true">音源情報の一覧</a></p>
+				<table>
+					<caption>投票情報</caption>
+					<tr>
+						<th style="width:75%;">投票件数</th>
+						<td><a href="search.php?type=sound_source&run=true"><!--# code getRow vote #-->件</a></td>
+					</tr>
+					<tr>
+						<th>音源投票合計P</th>
+						<td><!--# code getSum vote value #-->P</td>
+					</tr>
+					<tr>
+						<th>未処理目標達成件数</th>
+						<td><!--# mod sound_source drawSuccess #-->件</td>
+					</tr>
+				</table>
+				<p class="more"><a href="search.php?type=vote&run=true">投票情報の一覧</a></p>
+			</div><!--system_table END-->
+		</div><!--system_state END-->
+
+	</div><!--contents_m END-->
+
+</div><!--main_wrapper END-->
+</div><!--contents END-->
+
+<!--# include foot #-->
+
+</div><!--wrapper END-->
+</body>

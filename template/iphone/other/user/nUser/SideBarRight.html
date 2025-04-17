@@ -1,0 +1,28 @@
+<div class="contents_s2">
+
+		<div class="side_box point">
+			<h2>現在のポイント<strong><!--# ecode self point #--></strong>pt</h2>
+			<ul>
+				<li>投票済みのポイント<strong><!--# code getSum vote value owner = (!--# ecode self id #--) #--></strong>pt</li>
+			</ul>
+			<ul class="point_link clearfix">
+				<li><a href="search.php?type=kickback&run=true">獲得履歴</a></li>
+<!--# ifbegin false #-->
+                                <li><a href="search.php?type=payment&run=true">換金履歴</a></li>
+                                <li><a href="regist.php?type=payment">換金申請</a></li>
+<!--# endif #-->
+			</ul>
+			<!--# ifbegin val= (!--# ecode getSiteProfile use_click_point #--) TRUE #-->
+			<ul class="point_get_link clearfix">
+				<li><a href="click.php">クリックして<!--# ecode getSiteProfile click_point #-->ポイントをゲット！</a></li>
+			</ul>
+			<!--# endif #-->
+		</div><!--side_box END-->
+
+		<div class="side_box news">
+			<h2>新着情報・お知らせ</h2>
+
+			<!--# mod news drawHeadline  5 #-->
+
+		</div><!--side_box END-->
+	</div><!--contents_s2 END-->

@@ -1,0 +1,52 @@
+<body>
+<div id="wrapper" class="user">
+
+<!--# include head #-->
+<!--# include guide #-->
+
+<div id="contents">
+<div class="contents_body regist clearfix">
+
+	<!--# include sideBarLeft #-->
+
+	<div class="contents_m">
+
+		<div class="h2 clearfix">
+			<h2>ポイントの換金申請</h2>
+			<p class="back"><a href="other.php?key=account_service">アカウントサービスへ戻る</a></p>
+		</div><!--h2 END-->
+		<div class="form_table">
+
+			<!--# variable form_begin #-->
+
+			<table>
+				<caption>申請情報</caption>
+				<tr>
+					<th style="width:25%;">申請額</th>
+					<td class="(!--# syscode isValidateEx value_yen #--)">
+						<!--# form text value_yen 12 8  (!--# ecode ime off #--) #-->円（最大<!--# code comma (!--# ecode getMaxExchangeYen #--) #-->円）
+						<!--# syscode validateEx #-->
+	    			    <span class="notes">※申請額は<!--# code comma (!--# ecode getSiteProfile minimum_payment #--) #-->円以上からとなります</span>
+					</td>
+                </tr>
+			</table>
+			<div class="submit">
+				<ul>
+					<li><input type="submit" class="check" value="確認する" /></li>
+				</ul>
+			</div><!--submit END-->
+
+			<!--# variable form_end #-->
+
+		</div><!--form_table END-->
+	</div><!--contents_m END-->
+
+	<!--# include sideBarRight #-->
+
+</div><!--main_wrapper END-->
+</div><!--contents END-->
+
+<!--# include foot #-->
+
+</div><!--wrapper END-->
+</body>

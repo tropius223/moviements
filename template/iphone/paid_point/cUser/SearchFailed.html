@@ -1,0 +1,44 @@
+<body>
+<div id="wrapper" class="admin">
+
+<!--# include head #-->
+<!--# include guide #-->
+
+<div id="contents">
+<div class="contents_body search clearfix">
+
+	<!--# include sideBarLeft #-->
+
+	<div class="contents_m">
+		<div class="h2 clearfix">
+			<h2>換金一覧</h2>
+		</div><!--h2 END-->
+		<div class="search_form">
+
+			<form action="search.php" method="get">
+			<!--# form hidden type #-->
+			<!--# form hidden run #-->
+
+			<!--# include paid_pointSearchTable #-->
+
+			<p class="button"><input type="submit" class="search" value="検索" /></p>
+
+			</form>
+
+		</div><!--search_form END-->
+
+		<div class="message">
+			<p>検索条件に該当するデータは見つかりませんでした。</p>
+		</div><!--message END-->
+
+	</div><!--contents_m END-->
+
+	<!--# include sideBarRight #-->
+
+</div><!--main_wrapper END-->
+</div><!--contents END-->
+
+<!--# include foot #-->
+
+</div><!--wrapper END-->
+</body>

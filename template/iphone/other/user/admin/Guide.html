@@ -1,0 +1,61 @@
+<div id="menu">
+	<div class="menu_body clearfix">
+		<ul id="nav" class="clearfix">
+			<li class="active"><a href="index.php">トップページ</a></li>
+			<li><span>ユーザー管理</span>
+				<ul>
+					<li><a href="search.php?type=nUser&run=true">ユーザーの検索</a></li>
+					<li><a href="regist.php?type=multimail">一括メール送信</a></li>
+					<li><a href="report.php?type=nUser&run=true">ユーザー情報ダウンロード</a></li>
+				</ul>
+			</li>
+			<li><span>広告管理</span>
+				<ul>
+					<li><a href="regist.php?type=adwares">広告の追加</a></li>
+					<li><a href="search.php?type=adwares&run=true">広告の検索</a></li>
+					<!--# ifbegin alias system ADMIN nullcheck access_trade_access_id #-->
+						<li><a href="submit.php?type=accessTradeAPI">アクセストレードAPI</a></li>
+					<!--# endif #-->
+				</ul>
+			</li>
+			<li><span>音源管理</span>
+				<ul>
+<!--# ifbegin mod_on artist_enable #-->
+					<li><a href="search.php?type=cUser&run=true">アーティストの検索</a></li>
+<!--# endif #-->
+					<li><a href="regist.php?type=sound_source">音源の追加</a></li>
+					<li><a href="search.php?type=sound_source&run=true">音源の検索</a></li>
+					<li><a href="search.php?type=vote&run=true">投票の一覧</a></li>
+					<li><a href="search.php?type=paid_point&run=true">換金の一覧</a></li>
+				</ul>
+			</li>
+<!--# ifbegin false #-->
+			<li><span>成果・換金</span>
+				<ul>
+					<li><a href="search.php?type=kickback&run=true">成果情報の一覧</a></li>
+					<li><a href="search.php?type=payment&run=true">換金申請一覧</a></li>
+					<li><a href="other.php?key=paymentCSV">CSV出力</a></li>
+				</ul>
+			</li>
+<!--# endif #-->
+			<li><span>ASP管理</span>
+				<ul>
+					<li><a href="regist.php?type=asp_type">ASPの追加</a></li>
+					<li><a href="search.php?type=asp_type&run=true">ASPの一覧</a></li>
+				</ul>
+			</li>
+			<li><span>お知らせ管理</span>
+				<ul>
+					<li><a href="regist.php?type=news">お知らせの追加</a></li>
+					<li><a href="search.php?type=news&run=true">お知らせの一覧</a></li>
+				</ul>
+			</li>
+			<li><span>管理・設定</span>
+				<ul>
+					<li><a href="edit.php?type=admin&id=(!--# ecode getUserProfile id #--)">ログイン情報変更</a></li>
+					<li><a href="edit.php?type=system&id=ADMIN">システム設定変更</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div><!--menu_body END-->
+</div><!--menu END-->

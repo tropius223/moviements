@@ -1,0 +1,75 @@
+<body>
+<div id="wrapper" class="nobody">
+
+<!--# include head #-->
+<!--# include guide #-->
+
+<div id="contents">
+<div class="contents_body info clearfix">
+
+	<div class="contents_l">
+
+		<div class="h2 clearfix">
+			<h2>CSV出力</h2>
+		</div><!--h2 END-->
+		<div class="info_table">
+
+			<table>
+				<caption>▼換金申請</caption>
+
+				<tr>
+					<th width="30%">未処理の申請</th>
+					<td width="70%">
+
+						<form method="post" action="csv.php">
+							<!--# form text year 4 4 (!--# code now y #--) #-->年
+							<!--# code num_option month 12 (!--# code now m #--) 1 #-->月　
+							<input type="hidden" name="type" value="payment" >
+							<input type="hidden" name="status" value="none" >
+							<input type="submit" value="ダウンロード">
+						</form>
+
+					</td>
+				</tr>
+
+				<tr>
+					<th width="30%">換金中の申請</th>
+					<td width="70%">
+
+						<form method="post" action="csv.php">
+							<!--# form text year 4 4 (!--# code now y #--) #-->年
+							<!--# code num_option month 12 (!--# code now m #--) 1 #-->月　
+							<input type="hidden" name="type" value="payment" >
+							<input type="hidden" name="status" value="activate" >
+							<input type="submit" value="ダウンロード">
+						</form>
+
+					</td>
+				</tr>
+
+				<tr>
+					<th width="30%">換金完了の申請</th>
+					<td width="70%">
+
+						<form method="post" action="csv.php">
+							<!--# form text year 4 4 (!--# code now y #--) #-->年
+							<!--# code num_option month 12 (!--# code now m #--) 1 #-->月　
+							<input type="hidden" name="type" value="payment" >
+							<input type="hidden" name="status" value="accept" >
+							<input type="submit" value="ダウンロード">
+						</form>
+
+					</td>
+				</tr>
+			</table>
+
+		</div><!--info_table END-->
+	</div><!--contents_m END-->
+
+</div><!--main_wrapper END-->
+</div><!--contents END-->
+
+<!--# include foot #-->
+
+</div><!--wrapper END-->
+</body>

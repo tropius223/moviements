@@ -1,0 +1,38 @@
+<body>
+<div id="wrapper" class="user">
+
+<!--# include head #-->
+<!--# include guide #-->
+
+<div id="contents">
+<div class="contents_body account clearfix">
+
+	<!--# include sideBarLeft #-->
+
+	<div class="contents_m">
+
+		<div class="h2 clearfix">
+			<h2>アカウントサービス</h2>
+		</div><!--h2 END-->
+		<ul class="account_list clearfix">
+			<li class="get_history"><a href="search.php?type=kickback&run=true">ポイントの獲得履歴</a></li>
+			<li class="cash_history"><a href="search.php?type=vote&run=true">ポイントの投票履歴</a></li>
+<!--# ifbegin false #-->
+			<li class="cash_apply"><a href="regist.php?type=payment">換金申請</a></li>
+<!--# endif #-->
+			<li class="user_edit"><a href="edit.php?type=nUser&id=(!--# ecode self id #--)">登録情報の編集</a></li>
+			<li class="user_delete"><a href="edit.php?type=nUser&id=(!--# ecode self id #--)&delete=true">退会</a></li>
+		</ul>
+		<h3>あなたのティア登録URL</h3>
+		<p class="account_url"><label>URL:<input type="text" value="(!--# ecode getSiteProfile home #--)index.php?friend=(!--# ecode self id #--)" onfocus="this.select()" /></label></p>
+	</div><!--contents_m END-->
+
+	<!--# include sideBarRight #-->
+
+</div><!--main_wrapper END-->
+</div><!--contents END-->
+
+<!--# include foot #-->
+
+</div><!--wrapper END-->
+</body>

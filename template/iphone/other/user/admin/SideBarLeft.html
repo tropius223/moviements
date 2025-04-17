@@ -1,0 +1,14 @@
+	<div class="contents_s">
+		<div class="side_box manager">
+			<h2>ポイントシステム</h2>
+			<ul>
+				<li>広告登録数：<a href="search.php?type=adwares&run=true"><!--# code getRow adwares #-->件</a></li>
+				<li>最終ログイン日時：<span>（<!--# setTimeFormat Y/n/j\ G:i:s #--><!--# value old_login #-->）</span></li>
+			</ul>
+			<p class="more"><a href="edit.php?type=admin&id=(!--# ecode getUserProfile id #--)">ログイン情報変更</a></p>
+		</div><!--side_box END-->
+		<div class="side_box new_advertise">
+			<h2>最近追加した広告</h2>
+			<!--# mod adwares drawNewestAdwares #-->
+		</div><!--side_box END-->
+	</div><!--contents_s END-->

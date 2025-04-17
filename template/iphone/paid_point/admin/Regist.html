@@ -1,0 +1,48 @@
+<body>
+<div id="wrapper" class="user">
+
+<!--# include head #-->
+<!--# include guide #-->
+
+<div id="contents">
+<div class="contents_body regist clearfix">
+
+	<div class="contents_l">
+
+		<div class="h2 clearfix">
+			<h2>音源の換金</h2>
+			<p class="back"><a href="other.php?key=account_service">アカウントサービスへ戻る</a></p>
+		</div><!--h2 END-->
+		<div class="form_table">
+
+			<!--# variable form_begin #-->
+			<table>
+				<caption>換金情報</caption>
+				<tr>
+					<th style="width:25%;">換金ポイント</th>
+					<td class="(!--# syscode isValidateEx value_yen #--)">
+                                                <!--# form hidden sound_source_id #-->
+                                                <!--# syscode validate sound_source_id #-->
+						<!--# form text value_yen 12 8  (!--# ecode ime off #--) #-->P（最大<!--# code comma (!--# mod paid_point getMaxExchangeYen (!--# value sound_source_id #--) #--) #-->P）
+						<!--# syscode validateEx #-->
+					</td>
+                </tr>
+			</table>
+			<div class="submit">
+				<ul>
+					<li><input type="submit" class="check" value="確認する" /></li>
+				</ul>
+			</div><!--submit END-->
+
+			<!--# variable form_end #-->
+
+		</div><!--form_table END-->
+	</div><!--contents_m END-->
+
+</div><!--main_wrapper END-->
+</div><!--contents END-->
+
+<!--# include foot #-->
+
+</div><!--wrapper END-->
+</body>

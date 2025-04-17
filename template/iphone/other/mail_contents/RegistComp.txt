@@ -1,0 +1,21 @@
+<!--# readhead subject #-->
+会員登録が完了しました。【<!--# ecode getSiteProfile site_title #-->】
+<!--# readend #-->
+<!--# readhead main #-->
+<!--# value name #-->様
+
+ご利用いただき、ありがとうございます。
+<!--# ecode getSiteProfile site_title #-->です。
+<!--# value name #-->様の会員登録が完了しましたので、ご連絡させていただきます。
+
+以降サイトをご利用いただく際には、下記URLにアクセスし、
+ご登録いただいた メールアドレス と パスワード をご入力の上、ログインください。
+
+メールアドレス：<!--# value mail #-->
+パスワード　　：<!--# value pass1 #-->
+
+<!--# ecode getSiteProfile site_title #-->
+<!--# ecode getSiteProfile home #-->
+
+これからも当サイトをよろしくお願いいたします。
+<!--# readend #-->

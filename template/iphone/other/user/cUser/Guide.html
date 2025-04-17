@@ -1,0 +1,21 @@
+<div id="menu">
+	<div class="menu_body clearfix">
+		<ul class="clearfix">
+			<li class="top (!--# ecode casePrint top active #--)"><a href="index.php">トップページ</a></li>
+			<li class="sound_source_search (!--# ecode casePrint sound_sourceSearch active #--)"><a href="search.php?type=sound_source&run=true">音源検索</a></li>
+			<li class="management (!--# ecode casePrint companyInfo active #--)"><a href="other.php?key=company">運営者情報</a></li>
+			<li class="inquiry (!--# ecode casePrint inquiry active #--)"><a href="regist.php?type=sendmail">お問い合わせ</a></li>
+		</ul>
+<!--# ifbegin false #-->
+		<div class="search clearfix">
+			<form method="get" action="search.php">
+				<input type="hidden" name="type" value="adwares" />
+				<input type="hidden" name="run" value="true" />
+				<input type="text" id="advertise_search" class="advertise_search" name="name" value="検索するキーワードを入力して下さい。" title="検索するキーワードを入力して下さい。" />
+				<input type="hidden" name="name_PAL[]" value="match like" />
+				<input type="submit" class="advertise_search_btn" value="広告検索" />
+			</form>
+		</div><!--search END-->
+<!--# endif #-->
+	</div><!--menu_body END-->
+</div><!--menu END-->
