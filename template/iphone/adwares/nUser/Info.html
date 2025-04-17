@@ -1,0 +1,41 @@
+<body>
+<div id="wrapper" class="nobody">
+
+<!--# include head #-->
+<!--# include guide #-->
+
+<div id="contents">
+<div class="contents_body info clearfix">
+
+	<!--# include sideBarLeft #-->
+
+	<div class="contents_m">
+
+		<div class="h2 clearfix">
+			<h2><!--# value name #--></h2>
+			<p class="back"><a href="search.php?type=adwares&run=true">広告検索へ戻る</a></p>
+		</div><!--h2 END-->
+		<div class="info_table">
+
+			<!--# ifbegin val< 0 (!--# code getRow kickback adwares = (!--# value id #--) owner = (!--# ecode self id #--) #--) #-->
+			<table>
+				<tr>
+					<td>この広告からは既にポイントを取得しています。</td>
+				</tr>
+			</table>
+			<!--# endif #-->
+
+			<!--# include adwaresInfoTable #-->
+
+		</div><!--info_table END-->
+	</div><!--contents_m END-->
+
+	<!--# include sideBarRight #-->
+
+</div><!--main_wrapper END-->
+</div><!--contents END-->
+
+<!--# include foot #-->
+
+</div><!--wrapper END-->
+</body>

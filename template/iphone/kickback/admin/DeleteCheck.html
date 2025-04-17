@@ -1,0 +1,58 @@
+<body>
+<div id="wrapper" class="admin">
+
+<!--# include head #-->
+<!--# include guide #-->
+
+<div id="contents">
+<div class="contents_body delete clearfix">
+	<div class="contents_l">
+		<div class="h2 clearfix">
+			<h2>成果情報の削除</h2>
+		</div><!--h2 END-->
+		<p class="common">この成果情報を削除してよろしいですか？</p>
+		<div class="check_table">
+
+			<!--# variable form_begin #-->
+
+			<table>
+				<caption>成果情報</caption>
+				<tr>
+					<th style="width:20%;">ユーザー名</th>
+					<td><!--# alias nUser owner id name #--></td>
+				</tr>
+				<tr>
+					<th>広告名</th>
+					<td><!--# alias adwares adwares id name #--></td>
+				</tr>
+				<tr>
+					<th>成果</th>
+					<td><!--# value point #-->ポイント</td>
+				</tr>
+				<tr>
+					<th>発生日</th>
+					<td><!--# setTimeFormat Y/n/j\ G:i:s #--><!--# value regist #--></td>
+				</tr>
+				<tr>
+					<th>状況</th>
+					<td><!--# valueReplace state 2/1 有効/取り消し #--></td>
+				</tr>
+			</table>
+			<div class="submit">
+				<ul>
+					<li><input type="submit" name="Submit" class="delete" value="削除する" /></li>
+				</ul>
+			</div><!--submit END-->
+
+			<!--# variable form_end #-->
+
+		</div><!--check_table END-->
+	</div><!--contents_l END-->
+
+</div><!--main_wrapper END-->
+</div><!--contents END-->
+
+<!--# include foot #-->
+
+</div><!--wrapper END-->
+</body>

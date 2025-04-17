@@ -1,0 +1,61 @@
+<body>
+<div id="wrapper" class="nobody">
+
+<!--# include head #-->
+<!--# include guide #-->
+
+<div id="contents">
+<div class="contents_body regist clearfix">
+
+	<div class="contents_l">
+		<div class="h2 clearfix">
+			<h2>ログイン情報変更</h2>
+		</div><!--h2 END-->
+		<p class="common">ログイン情報の変更を行ないます。必須項目を入力の上、送信して下さい。</p>
+		<div class="form_table">
+
+			<!--# variable form_begin #-->
+
+			<table>
+				<caption>ログイン情報</caption>
+				<tr>
+					<th style="width:20%;"><span class="required">[必須]</span>メールアドレス</th>
+					<td class="(!--# syscode isValidateEx mail #--)">
+						<!--# form text mail 50 255  (!--# ecode ime off #--) #-->
+						<!--# syscode validateEx #-->
+					</td>
+				</tr>
+				<tr>
+					<th><span class="required">[必須]</span>パスワード</th>
+					<td class="(!--# syscode isValidateEx pass1 #--)">
+						<!--# form password pass1 16 16  (!--# ecode ime off #--) #-->
+						<!--# syscode validateEx #-->
+					</td>
+				</tr>
+				<tr>
+					<th><span class="required">[必須]</span>パスワード（確認）</th>
+					<td class="(!--# syscode isValidateEx pass2 #--)">
+						<!--# form password pass2 16 16  (!--# ecode ime off #--) #-->
+						<!--# syscode validateEx #-->
+					</td>
+				</tr>
+			</table>
+
+			<div class="submit">
+				<ul>
+					<li><input type="submit" name="Submit" class="check" value="確認する" /></li>
+				</ul>
+			</div><!--submit END-->
+
+			<!--# variable form_end #-->
+
+		</div><!--form_table END-->
+	</div><!--contents_l END-->
+
+</div><!--main_wrapper END-->
+</div><!--contents END-->
+
+<!--# include foot #-->
+
+</div><!--wrapper END-->
+</body>

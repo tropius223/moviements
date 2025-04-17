@@ -1,0 +1,102 @@
+<body>
+<div id="wrapper" class="nobody">
+
+<!--# include head #-->
+<!--# include guide #-->
+
+<div id="contents">
+<div class="contents_body regist clearfix">
+
+	<div class="contents_l">
+		<div class="h2 clearfix">
+			<h2>広告インポート</h2>
+		</div><!--h2 END-->
+		<div class="form_table">
+
+			<!--# variable form_begin #-->
+
+			<table>
+				<caption>取得設定</caption>
+				<tr>
+					<th style="width:30%;">件数</th>
+					<td colspan="2" class="(!--# syscode isValidateEx get_row #--)">
+						<!--# form option get_row  /10/20/50/100 全件/10件/20件/50件/100件 #-->
+						<!--# syscode ValidateEx #-->
+					</td>
+				</tr>
+
+				<tr>
+					<th>カテゴリ</th>
+					<td colspan="2" class="(!--# syscode isValidateEx first_category/second_category/third_category/import_category #--)">
+						<!--# code tableSelectForm first_category accessTradeFirstCategory name id  選択してください #-->
+						<span class="second_category_area">
+							<!--# form option second_category   選択してください #-->
+						</span>
+						<span class="third_category_area">
+							<!--# form option third_category   選択してください #-->
+						</span>
+						の広告を
+						<!--# code tableSelectForm import_category category name id  全て #-->
+						として取り込む
+					</td>
+				</tr>
+
+				<tr>
+					<th>成功報酬</th>
+					<td class="(!--# syscode isValidateEx use_point_setting/point #--)">
+						<!--# form radio use_point_setting FALSE  FALSE オリジナルの値を使用 #--><br />
+						<!--# form radio use_point_setting FALSE  TRUE 一括設定 #-->　
+						<!--# form text point 10 10 #-->
+						<span id="point_type_selector_area"><!--# form radio point_type   f/p ポイント/パーセント #--></span>
+						<div id="point_to_yen_area">ポイントの場合</div>
+						<!--# syscode ValidateEx #-->
+					</td>
+					<td class="(!--# syscode isValidateEx point_view_type/point_view_value #--)">
+						<div id="point_view_type_selector_area">
+							ユーザー画面の報酬額を<br />
+							<!--# form radio point_view_type (!--# safeVariable point_view_type #--)  p パーセントで表示 #--><br />
+							<!--# form radio point_view_type (!--# safeVariable point_view_type #--)  f ポイントで表示 #-->
+							(<!--# form text point_view_value 8 8 (!--# safeVariable point_view_value #--) #-->ポイント × 設定パーセント)
+						</div>
+						<!--# syscode ValidateEx #-->
+					</td>
+				</tr>
+				<tr>
+					<th>公開期限</th>
+					<td class="(!--# syscode isValidateEx ue_limit_setting/limit_year/limit_month/limit_day #--)" colspan="2">
+						<!--# form radio use_limit_setting FALSE  FALSE オリジナルの値を使用 #--><br />
+						<!--# form radio use_limit_setting FALSE  TRUE 一括設定 #-->　
+						西暦<!--# form text limit_year 4 4 (!--# code now y #--) #-->年
+						<!--# code num_option limit_month 12 (!--# code now m #--) 1 #-->月
+						<!--# code num_option limit_day 31 (!--# code now d #--) 1 #-->日
+						<!--# syscode ValidateEx #-->
+					</td>
+				</tr>
+				<tr>
+					<th>公開状態</th>
+					<td colspan="2">
+						取り込んだ広告は[ <!--# form radio open_status TRUE  TRUE/FALSE 公開/非公開 #--> ]にする
+						<!--# syscode ValidateEx #-->
+					</td>
+				</tr>
+			</table>
+
+			<div class="submit">
+				<ul>
+					<li><input type="submit" name="Submit" class="check" value="確認する" /></li>
+				</ul>
+			</div><!--submit END-->
+
+			<!--# variable form_end #-->
+
+		</div><!--form_table END-->
+	</div><!--contents_l END-->
+
+</div><!--main_wrapper END-->
+</div><!--contents END-->
+
+<!--# include foot #-->
+
+</div><!--wrapper END-->
+</body>
+

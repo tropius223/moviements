@@ -1,0 +1,47 @@
+<table>
+	<tr>
+		<th>広告名</th>
+		<td>
+			<!--# form text name 32 256  (!--# ecode ime on #--) #-->
+			<input type="hidden" name="name_PAL[]" value="match like" />
+		</td>
+		<th>カテゴリ</th>
+		<td>
+			<!--# code tableSelectForm category category name id  全て #-->
+			<input type="hidden" name="category_PAL[]" value="match comp" />
+		</td>
+	</tr>
+	<tr>
+		<th>対応キャリア</th>
+		<td colspan="3">
+			<!--# form checkbox use_carrier_url   FALSE 共通 onclick="switch_carrier();" #-->または　
+			<!--# form checkbox selected_carrier   docomo/au/softbank/iphone/android docomo/au/softbank/iPhone/Android #-->
+			<input type="hidden" name="use_carrier_url_PAL[]" value="match or" />
+			<input type="hidden" name="selected_carrier_PAL[]" value="match or" />
+			<script>
+				function switch_carrier()
+				{
+					var $check    = document.querySelector( 'input[type="checkbox"][name="use_carrier_url[]"]' );
+					var $carriers = document.querySelectorAll( 'input[type="checkbox"][name="selected_carrier[]"]' );
+
+					for( var $i = 0 ; $carriers.length > $i ; ++$i )
+					{
+						if( $check.checked )
+							{ $carriers[ $i ].disabled = true; }
+						else
+							{ $carriers[ $i ].disabled = false; }
+					}
+				}
+
+				window.setTimeout( switch_carrier , 0 );
+			</script>
+		</td>
+	</tr>
+	<tr>
+		<th>成果</th>
+		<td colspan="3">
+			<!--# form checkbox _useable   true ポイント未取得の広告だけ検索する #-->
+		</td>
+	</tr>
+</table>
+<!--# form hidden _carrier #-->

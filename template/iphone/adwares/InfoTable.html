@@ -1,0 +1,57 @@
+<table>
+	<caption>広告の詳細情報</caption>
+	<tr>
+		<th>広告名</th>
+		<td><!--# value name #--></td>
+	</tr>
+	<tr>
+		<th>カテゴリ</th>
+		<td><a href="search.php?type=adwares&run=true&category=(!--# value category #--)&category_PAL[]=match comp"><!--# alias category category id name #--></a></td>
+	</tr>
+	<tr>
+		<th>バナー</th>
+		<td><p class="image"><!--# object imageSize banner 112 84 #--></p></td>
+	</tr>
+	<tr>
+		<th>テキスト</th>
+		<td><!--# value text #--></td>
+	</tr>
+	<tr>
+		<th>対応キャリア</th>
+		<td>
+			<!--# ifbegin equal use_carrier_url #-->
+				<!--# ecode drawCarrierNames #-->
+			<!--# else #-->
+				全て
+			<!--# endif #-->
+		</td>
+	</tr>
+	<tr>
+		<th>URL</th>
+		<td>
+			<!--# ifbegin equal use_carrier_url #-->
+				<!--# value url #-->
+			<!--# else #-->
+				<!--# ecode getCarrierURL #-->
+			<!--# endif #-->
+		</td>
+	</tr>
+	<tr>
+		<th>ポイント獲得条件</th>
+		<td><!--# value term #--></td>
+	</tr>
+	<tr>
+		<th>成功報酬</th>
+		<td>
+			<!--# ifbegin equal point_type f #-->
+				<!--# value point #-->ポイント
+			<!--# else #-->
+				<!--# ifbegin equal point_view_type f #-->
+　　　　　　　　　　<!--# calc (!--# value point_view_value #--) * (!--# value point #--) / 100.0 #-->％
+				<!--# else #-->
+					<!--# value point #-->パーセント
+				<!--# endif #-->
+			<!--# endif #-->
+		</td>
+	</tr>
+</table>

@@ -1,0 +1,59 @@
+<table>
+	<caption>アーティスト情報</caption>
+	<tr>
+		<th style="width:30%;">名前</th>
+		<td><!--# value name #--></td>
+	</tr>
+	<tr>
+		<th>都道府県</th>
+		<td><!--# alias prefectures adds id name #--></td>
+	</tr>
+	<tr>
+		<th>市区町村</th>
+		<td><!--# value add_sub #--></td>
+	</tr>
+	<tr>
+		<th>性別</th>
+		<td><!--# value sex #--></td>
+	</tr>
+	<tr>
+		<th>生年月日</th>
+		<td><!--# value birth_year #-->年<!--# value birth_month #-->月<!--# value birth_day #-->日 （<!--# code drawAgeByBirth (!--# value birth_year #--) (!--# value birth_month #--) (!--# value birth_day #--) #-->歳）</td>
+	</tr>
+</table>
+
+<table>
+	<caption>振込み先</caption>
+	<tr>
+		<th style="width:30%;">銀行名</th>
+		<td><!--# value bank_name #--></td>
+	</tr>
+	<tr>
+		<th>支店名</th>
+		<td><!--# value branch_name #--></td>
+	</tr>
+	<tr>
+		<th>口座名義</th>
+		<td><!--# value bank_user #--></td>
+	</tr>
+	<tr>
+		<th>口座種類</th>
+		<td><!--# value bank_type #--></td>
+	</tr>
+	<tr>
+		<th>口座番号</th>
+		<td><!--# value bank_number #--></td>
+	</tr>
+</table>
+
+<table>
+	<caption>ログイン情報</caption>
+	<tr>
+		<th style="width:30%;">メールアドレス</th>
+		<td><!--# value mail #--></td>
+	</tr>
+	<tr>
+		<th>パスワード</th>
+		<td><!--# code drawPassChar (!--# value pass1 #--) #--></td>
+	</tr>
+</table>

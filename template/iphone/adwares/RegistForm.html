@@ -1,0 +1,109 @@
+<table>
+	<caption>広告情報</caption>
+	<tr>
+		<th style="width:20%;"><span class="required">[必須]</span>広告ASP選択</th>
+		<td colspan="2" class="(!--# syscode isValidateEx asp_type #--)">
+			<!--# code tableSelectForm asp_type asp_type name id #-->
+			<!--# syscode ValidateEx #-->
+		</td>
+	</tr>
+	<tr>
+		<th><span class="required">[必須]</span>広告名</th>
+		<td colspan="2" class="(!--# syscode isValidateEx name #--)">
+			<!--# form text name 50 256 #-->
+			<!--# syscode ValidateEx #-->
+		</td>
+	</tr>
+
+	<tr>
+		<th><span class="required">[必須]</span>カテゴリ</th>
+		<td colspan="2" class="(!--# syscode isValidateEx category #--)">
+			<!--# code tableSelectForm category category name id  全て #-->
+			<!--# syscode ValidateEx #-->
+		</td>
+	</tr>
+	<tr>
+		<th>バナー</th>
+		<td colspan="2" class="(!--# syscode isValidateEx banner #--)">
+			<input type="hidden" name="MAX_FILE_SIZE" value="1048576"><!--# form file banner #-->
+			<!--# syscode ValidateEx #-->
+		</td>
+	</tr>
+	<tr>
+		<th><span class="required">[必須]</span>テキスト</th>
+		<td colspan="2" class="(!--# syscode isValidateEx text #--)">
+			<!--# form text text 50 256 #-->
+			<!--# syscode ValidateEx #-->
+		</td>
+	</tr>
+	<tr>
+		<th><span class="required">[必須]</span>URL</th>
+		<td colspan="2" class="(!--# syscode isValidateEx use_carrier_url/url/url_docomo/url_au/url_softbank/url_iphone/uri_android #--)">
+			<!--# form radio use_carrier_url FALSE  FALSE 共通 #--><!--# form text url 50 256 #--><br />
+			<!--# form radio use_carrier_url FALSE  TRUE キャリア・機種別 #-->
+			<dl class="clearfix">
+				<dt>docomo</dt>
+				<dd><!--# form text url_docomo 50 256 #--></dd>
+				<dt>au</dt>
+				<dd><!--# form text url_au 50 256 #--></dd>
+				<dt>softbank</dt>
+				<dd><!--# form text url_softbank 50 256 #--></dd>
+				<dt>iPhone</dt>
+				<dd><!--# form text url_iphone 50 256 #--></dd>
+				<dt>Android</dt>
+				<dd><!--# form text url_android 50 256 #--></dd>
+			</dl>
+			<!--# syscode ValidateEx #-->
+		</td>
+	</tr>
+	<tr>
+		<th><span class="required">[必須]</span>ポイント獲得条件</th>
+		<td colspan="2" class="(!--# syscode isValidateEx term #--)">
+			<!--# form textarea term 40 5 #-->
+			<!--# syscode ValidateEx #-->
+		</td>
+	</tr>
+	<tr>
+		<th><span class="required">[必須]</span>成功報酬</th>
+		<td class="(!--# syscode isValidateEx point/point_type/point_view_type/point_view_value #--)">
+			<!--# form text point 10 10 #-->
+			<span id="point_type_selector_area">
+				<!--# form radio point_type   f/p ポイント/パーセント #-->
+			</span>
+			<div id="point_to_yen_area">ポイントの場合</div>
+			<!--# syscode ValidateEx #-->
+		</td>
+		<td>
+			<div id="point_view_type_selector_area">
+				ユーザー画面の報酬額を<br />
+				<!--# form radio point_view_type (!--# safeVariable point_view_type #--)  p パーセントで表示 #--><br />
+				<!--# form radio point_view_type (!--# safeVariable point_view_type #--)  f ポイントで表示 #-->
+				(<!--# form text point_view_value 8 8 (!--# safeVariable point_view_value #--) #-->ポイント × 設定パーセント)
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<th>ティア報酬</th>
+		<td colspan="3" class="(!--# syscode isValidateEx parent_rate/grandparent_rate #--)">
+			報酬の<!--# form text parent_rate 5 5 #-->％<br />
+			<!--# syscode ValidateEx #-->
+		</td>
+	</tr>
+	<tr>
+		<th><span class="required">[必須]</span>公開設定</th>
+		<td colspan="2" class="(!--# syscode isValidateEx open #--)">
+			<!--# form radio open TRUE  TRUE/FALSE 公開/非公開 #-->
+			<!--# syscode ValidateEx #-->
+		</td>
+	</tr>
+	<tr>
+		<th>公開期限</th>
+		<td colspan="2" class="(!--# syscode isValidateEx use_limit_time/limit_year/limit_month/limit_day #--)">
+			<!--# form radio use_limit_time FALSE  FALSE/TRUE 設定しない/設定する #-->
+			西暦<!--# form text limit_year 4 4 (!--# code now y #--) #-->年
+			<!--# code num_option limit_month 12 (!--# code now m #--) 1 #-->月
+			<!--# code num_option limit_day 31 (!--# code now d #--) 1 #-->日
+			<!--# syscode ValidateEx #-->
+		</td>
+	</tr>
+</table>
